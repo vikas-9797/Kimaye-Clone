@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cartpage</title>
+</head>
+
+<link rel="stylesheet" href="cart.css">
+
+<body>
+   <div class="vikas_cart_head">
+      <h1>cart</h1><br>
+      <p><span>Home  </span>  / cart</p>
+   </div>
+    
+        <table>
+            <thead class="vikas_head">
+                <tr>
+                    <th class="remove"></th>
+                    <th></th>
+                    <th>PRODUCT</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody id="vikas_tbody">     
+            <tbody>
+              
+        </table>
+
+<div id="vikas_if_empty"></div>
+
+<div class="vikas_final_price">
+   <div>
+       <p>SPECIAL INSTRUCTIONS</p>
+       <input type="text" id="instruction">
+   </div>
+   <div>
+       <p>CART TOTALS</p>
+
+        <div class="subtotal">
+                <div class="flex">
+                    <span>Subtotal:</span>
+                    <span id="price1"></span>
+                </div>
+
+                <hr>
+
+                <div class="flex bottom">
+                    <p>TOTAL</p>
+                    <p id="price2"></p>
+                </div>
+        </div>
+
+    <button  class="vikas_proceed">PROCEED TO CHECKOUT</button>
+    <button class="vikas_proceed">CONTINUE SHOPPING</button>
+
+   </div>
+</div>
+  
+   
+    
+</body>
+
+<script src="./cart.js"></script>
+</html>
