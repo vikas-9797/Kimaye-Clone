@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="./checkout.css">
+</head>
+<body>
+    <div id="vikas_box">
+        <div id="vikas_contact">
+            <a href="">
+              <img
+                width="251px"
+                height="72px"
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo.png?14577"
+                alt="kimaye"
+              />
+            </a>
+  
+          <p><span style="color: rgba(255, 0, 0, 0.767);">Cart </span>> Information > Shipping > payment</p>
+
+
+          <form id="form" >
+                <div class="header">
+                    <h3>Contact information</h3>
+                </div>
+                <br>
+                <input type="text" placeholder="Email" />
+                <br><br>
+
+                <input type="checkbox" />
+                <label for="check">Get order notification and delivery updates</label>
+                <h3>Shipping address</h3>
+                <div id="country">
+                    <input type="text" placeholder="INDIA">
+                </div>
+
+                <br><br>
+                <div id="vikas_name">
+                    <input type="text" placeholder="First name" />
+                    <input type="text" placeholder="Last name" />
+                </div>
+
+                <br>
+                <input type="text" placeholder="Address" />
+              
+                <br>
+                <input
+                  type="text"
+                  placeholder="Apartment,suite,etc.(optional)"
+                />
+
+                <br />
+                <div id="vikas_addres">
+                    <input type="text" placeholder="City" />
+                    <select name="state" aria-placeholder="state">
+                          <option value="state">state</option>
+                          <option value="Delhi">Delhi</option>
+                          <option value="Gurgaon">Gurgaon</option>
+                          <option value="Mumbai">Mumbai</option>
+                    </select>
+                    <input type="number" placeholder="PIN code" />
+                </div>
+
+                <br>
+                <input
+                  type="text"
+                  placeholder="Mobile number for order and delivery updates"
+                />
+              
+                <br>
+                <br>
+                <input type="checkbox" />
+                <label for="checkbox">Save this information for next time</label>
+                <br><br><br>
+                <input type="submit" value="continue to shopping" />
+          </form>
+
+          <hr />
+          <p>All rights reserved .</p>
+        </div>
+        
+
+        <div >
+            <table class="vikas_box3">
+                <tbody id="vikas_tbody"></tbody>
+            </table>
+
+            <hr class="hr">
+
+            <input id="promocode" type="text" placeholder="Gift Cart or discount code">
+            <input id="btn" type="submit" value="Apply">
+            <br>
+            <br>
+            <hr class="hr">
+
+            <div class="vikas_sub">
+                 <p>Subtotal</p> <p id="price1"></p>
+            </div>
+            <div class="vikas_sub">
+                 <p>Shipping</p> <p>Free</p>
+            </div>
+
+            <hr class="hr">
+            <div class="vikas_sub1">
+                  <p>Total</p>
+                  <p id="price2">654</p>
+            </div> 
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script src="./checkout.js"></script>

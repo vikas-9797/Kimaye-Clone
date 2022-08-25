@@ -1,0 +1,140 @@
+
+*{
+    font-family: sans-serif;
+}
+
+#vikas_box{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+.vikas_box3{
+    margin-left: 100px;
+    margin-top:50px ;
+}
+
+.productimg{
+    width: 80px;
+    height: 80px;
+    margin-left: -10px;
+    margin-top: -5px;
+    border-radius: 10px;
+}
+
+.name{
+    padding-left: 50px;
+}
+
+.price{
+     padding-left: 50px;
+}
+
+#promocode{
+    padding: 15px 10px;
+    width: 45%;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#btn{
+    padding: 15px;
+    cursor: pointer;
+}
+.hr{
+    width: 70%;
+    margin-left: 100px;
+}
+.vikas_sub{
+    display: flex;
+    width: 70%;
+    margin-left: 100px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.vikas_sub1{
+    display: flex;
+    width: 70%;
+    margin-left: 100px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#price1{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 550;
+}
+#price2{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+/* contact css */
+
+  #vikas_contact{
+
+    background-color: beige;
+    padding: 50px 100px 100px 100px;
+    
+  }
+
+  input[type="text"],
+  select {
+    width: 93%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    resize: vertical;
+    border-radius: 5px;
+  }
+
+  input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgba(0, 128, 0, 0.815);
+    box-sizing: border-box;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 1.4em 1.7em;
+    text-align: center;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 55px;
+  }
+
+  #vikas_name{
+    display: flex;
+    width: 100%;
+  }
+  
+  #vikas_addres{
+    display: flex;
+    width: 100%;
+  }
+
+  #vikas_contact>p{
+    font-size: 13px;
+    color: rgba(128, 128, 128, 0.979);
+  }
+
+  @media screen and (min-width: 401px) and (max-width: 800px) {
+  
+  }
+  @media screen and (min-width: 0px) and (max-width: 400px) {
+
+  } 
+  
+  
