@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <link rel="stylesheet" href="./payment.css">
+</head>
+<body>
+    <div id="vikas_box">
+        <div id="vikas_contact">
+            <a href="">
+              <img
+                width="251px"
+                height="72px"
+                src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo.png?14577"
+                alt="kimaye"
+              />
+            </a>
+  
+          <div id = "MainDiv">
+            <h1 style="text-align: center; padding-top: 10px ;color: teal;font-style: oblique;">Payment Getway</h1>
+            <div id = "Pay">
+                <p style="font-weight: bold;">PAYMENT METHOD<span ></span><span id="Amount"></span></p>
+                <hr>
+              
+                <div id='head' style='padding: 10px;'>
+                    <label for='option-1' style=' padding: 5px; font-size: 1rem;'>
+                    <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Credit / Debit Card</label>
+                </div>
+    
+    
+                <p id="CN">Card Number <input type="number" placeholder="Card Number 16 Digit"></p>
+                
+                <p id = "Name">Name On Card <input type="text" placeholder="Name On Card"></p>
+    
+                <p id="Date">Expiry (MM/YY) <input type="text" placeholder="Date Of Card (Expiry)"></p>
+    
+                <p id ="Cvv">CVV <input type="password" placeholder="3 Dgit Number"></p>
+    
+                <div id='block-11' style='padding: 10px;'>
+                    <label for='option-11' style=' padding: 5px; font-size: 1rem;'>
+                    <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Net Banking</label>
+                </div>
+            
+                <div id='block-11' style='padding: 10px;'>
+                    <label for='option-11' style=' padding: 5px; font-size: 1rem;'>
+                    <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Paytm Wallet</label>
+                </div>
+            
+                <div id='block-11' style='padding: 10px;'>
+                    <label for='option-11' style=' padding: 5px; font-size: 1rem;'>
+                    <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    Other Wallets</label>
+                </div>
+            
+                <div id='block-11' style='padding: 10px;'>
+                    <label for='option-11' style=' padding: 5px; font-size: 1rem;'>
+                    <input type='radio' name='option' value='card' style='transform: scale(1.2); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                    UPI</label>
+                </div>
+    
+                 <p style="padding: 10px;">This tansaction you make is totaly secure we Do not save your CVV number</p>
+                <div class="last">
+                    <a href="otp.html" ><strong>Pay Now</strong></a>
+                </div>
+            </div>
+          </div>
+
+          <div id="last_nav">
+                <div>
+                    <img src="https://static.nnnow.com/Verified_by_Visa_logo.png" alt="">
+                    <img src="https://static.nnnow.com/verified-mastercard.png" alt="">
+                    <img src="https://static.nnnow.com/verified-pci.png" alt="">
+                    <img src="https://static.nnnow.com/AMEX-safekey.png" alt="">
+                </div>
+            
+          </div>   
+
+
+    </div>
+        
+
+        <div >
+            <table class="vikas_box3">
+                <tbody id="vikas_tbody"></tbody>
+            </table>
+
+            <br>
+            <br>
+            <hr class="hr">
+
+            <div class="vikas_sub">
+                 <p>Subtotal</p> <p id="price1"></p>
+            </div>
+            <div class="vikas_sub">
+                 <p>Shipping</p> <p>Free</p>
+            </div>
+
+            <hr class="hr">
+            <div class="vikas_sub1">
+                  <p>Total</p>
+                  <p id="price2">654</p>
+            </div> 
+        </div>
+
+    </div>
+</body>
+</html>
+
+<script src="./checkout.js"></script>
