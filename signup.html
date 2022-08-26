@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .back {
+            position: absolute;
+            width: 100%;
+            background-color: rgb(240, 240, 240);
+
+
+
+
+        }
+
+        .back #login_layout {
+            width: 30%;
+
+            margin-left: 70%;
+
+            background-color: white;
+
+
+
+        }
+
+        .back .signin_topbar {
+            background: black;
+            color: white;
+            height: 80px;
+            width: 100%;
+            margin-top: 0;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 30px;
+            font-size: 25px;
+            text-align: left;
+            padding-left: 20px;
+
+        }
+
+        .back .profile_icon>img {
+            height: 40%;
+            width: 40%;
+        }
+
+        .back input {
+            width: 80%;
+            height: 30px;
+            margin: auto;
+        }
+
+        .back #reg,
+        .back button {
+            width: 80%;
+            height: 40px;
+            margin: auto;
+            border: 3px solid black;
+            font-size: 15px;
+            font-weight: bolder;
+            color: black;
+            background-color: white;
+        }
+
+        .back button:hover,
+        .back #reg:hover {
+            width: 80%;
+            height: 43px;
+            margin: auto;
+            border: 3px solid white;
+            font-size: 15px;
+            font-weight: bolder;
+            color: white;
+            background-color: rgb(72, 71, 71);
+        }
+
+        .back #myForm {
+            padding: 2%;
+            position: relative;
+            left: 5%;
+        }
+
+        .back #center_bar {
+            text-align: center;
+            padding: 2%;
+        }
+
+        .back .fa {
+            font-size: 31px;
+            margin-left: 45%;
+        }
+
+        .back .facebook_bar {
+            background-color: #3b5998;
+            color: white;
+            height: 28px;
+            text-align: initial;
+            display: flex;
+            padding: 2%;
+            margin-bottom: 5%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            left: -7%;
+            position: relative;
+            padding-left: 26px;
+        }
+
+        .back .fa fa-facebook oxi_icon oxi_icon_facebook {
+            text-align: center;
+        }
+
+        .back .google_bar {
+            background-color: #DB4437;
+            color: white;
+            display: flex;
+            height: 28px;
+            position: relative;
+            left: -7%;
+            text-align: initial;
+            padding: 2%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 3%;
+            padding-left: 26px;
+        }
+
+        .back strong {
+            color: red;
+        }
+
+        .back .profile_icon>img {
+            height: -9%;
+            width: 25%;
+        }
+
+        .back p {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .back h3 {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div id="login_layout">
+            <div class="signin_topbar">
+                <div style="    position: relative;
+                left: -12%;">SIGN IN
+                </div>
+                <div>close -</div>
+            </div>
+
+            <form onsubmit="signup_log(event)" id="myForm">
+                <div class="facebook_bar">
+
+                    <div>Sign in with facebook </div>
+                    <i class="fa fa-facebook oxi_icon oxi_icon_facebook"></i>
+                    <br>
+                </div>
+                <div class="google_bar">
+
+                    <div>Sign in with Google</div>
+                    <i id="google_log" class="fa fa-google oxi_icon oxi_icon_google"></i>
+                </div>
+                <label> First Name</label><br><br>
+                <input type="text" required id="name" />
+                <br>
+                <br>
+                <label>Last Name</label><br><br>
+                <input type="text" required id="phone" />
+                <br>
+                <br>
+                <label>Email address <strong>*</strong></label><br><br>
+                <input type="text" required id="email" />
+                <br>
+                <br>
+                <label>Password <strong>*</strong></label><br><br>
+                <input type="text" required id="password" />
+                <br>
+                <br>
+                <input id="reg" type="submit" value="REGISTER">
+                <button type="submit">REGISTER</button>
+            </form>
+            <br>
+            <div id="center_bar">
+                <div class="profile_icon">
+                    <img src="https://deejayfarm.com/wp-content/uploads/2019/10/Profile-pic.jpg" />
+                </div>
+                <h3>No account yet?</h3>
+                <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying
+                    our
+                    safe and tasty fruits.</p>
+                <a href="login.html"><button style="WIDTH: 30%;">LOGIN</button></a>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    function signup_log(e) {
+
+        event.preventDefault();
+        let myForm = document.getElementById("myForm");
+        let name = myForm.name.value;
+        let email = myForm.email.value;
+        let phone = myForm.phone.value;
+        let password = myForm.password.value;
+
+        // console.log(name,email,password)
+        if (localStorage.getItem('users') === null) {
+            localStorage.setItem("users", JSON.stringify([]));
+        }
+        let user = {
+            name,
+            email,
+            phone,
+            password,
+        };
+
+        let arr = JSON.parse(localStorage.getItem("users"))
+        // window.location.href = "login.html"
+        console.log("Pp")
+        arr.push(user);
+        localStorage.setItem("users", JSON.stringify(arr));
+
+
+    }
+
+
+</script>
