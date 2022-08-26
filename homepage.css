@@ -46,6 +46,7 @@
     gap: 200px;
     /* margin-left: 200px; */
     background-color: azure;
+    position: fixed;
 }
 #logo > img {
     height: 40px;
@@ -81,6 +82,9 @@
 }
 #right > img {
     margin-top: 15px;
+}
+a {
+   text-decoration: none;
 }
 
 
@@ -225,3 +229,66 @@
     height: 500px;
     width: 100%;
  }
+ #p1 {
+   height: 350px;
+   width: 500px;
+   background-image: url(https://marathiquotes.in/wp-content/uploads/2021/09/Health-benefitof-pomegranate-in-marathi.jpg);
+   border-radius: 20px;
+   color: white;
+   text-align: center;
+   
+ }
+ #p2 {
+   height: 350px;
+   width: 500px;
+   background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg);
+   border-radius: 20px; 
+   color: white;
+}
+ #bx1{
+   display: flex;
+   gap: 200px;
+   margin-left: 150px;
+   margin-top: 100px;
+ }
+ #p1 > h1 {
+   margin-top: 190px;
+   font-size: 28px;
+ }
+ #p2 > h1 {
+   margin-top: 210px;
+   font-size: 28px;
+   
+ }
+ #jazz_tit {
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /* margin-top: 100px; */
+ }
+
+
+
+ /* Footer */
+
+ /* #footer{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 700px;
+   margin-left: 150px;
+ } */
+ #foot1 {
+   display: flex;
+   gap: 700px;
+   margin-left: 150px;
+ }
+ #foot2 {
+   display: flex;
+   gap: 700px;
+   margin-left: 150px;
+ }
+ #footer {
+   background: #7d9c5b;
+ }
+ 
+ 
