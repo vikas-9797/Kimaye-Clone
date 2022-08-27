@@ -6,14 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .back {
+            background-image: url(https://raw.githubusercontent.com/harishreyya/kimaye/main/images/backgroundkamayir.png);
             position: absolute;
             width: 100%;
             background-color: rgb(240, 240, 240);
-
-
 
 
         }
@@ -33,7 +31,7 @@
             background: black;
             color: white;
             height: 80px;
-            width: 100%;
+            width: 95%;
             margin-top: 0;
             display: flex;
             justify-content: space-around;
@@ -104,7 +102,7 @@
             padding: 2%;
             margin-bottom: 5%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            left: -7%;
+            left: -5%;
             position: relative;
             padding-left: 26px;
         }
@@ -119,7 +117,7 @@
             display: flex;
             height: 28px;
             position: relative;
-            left: -7%;
+            left: -5%;
             text-align: initial;
             padding: 2%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -159,7 +157,7 @@
                 <div>close -</div>
             </div>
 
-            <form onsubmit="signup_log(event)" id="myForm">
+            <form id="myForm">
                 <div class="facebook_bar">
 
                     <div>Sign in with facebook </div>
@@ -176,7 +174,7 @@
                 <br>
                 <br>
                 <label>Last Name</label><br><br>
-                <input type="text" required id="phone" />
+                <input type="text" required id="last_name" />
                 <br>
                 <br>
                 <label>Email address <strong>*</strong></label><br><br>
@@ -188,7 +186,8 @@
                 <br>
                 <br>
                 <input id="reg" type="submit" value="REGISTER">
-                <button type="submit">REGISTER</button>
+
+
             </form>
             <br>
             <div id="center_bar">
@@ -206,37 +205,35 @@
         </div>
     </div>
 
+
 </body>
 
 </html>
 <script>
-    function signup_log(e) {
+
+    let myForm = document.getElementById("myForm");
+    myForm.addEventListener("submit", signup)
+    function signup() {
 
         event.preventDefault();
-        let myForm = document.getElementById("myForm");
         let name = myForm.name.value;
         let email = myForm.email.value;
-        let phone = myForm.phone.value;
+        let last_name = myForm.last_name.value;
         let password = myForm.password.value;
 
         // console.log(name,email,password)
-        if (localStorage.getItem('users') === null) {
-            localStorage.setItem("users", JSON.stringify([]));
-        }
+
+
+
         let user = {
             name,
             email,
-            phone,
+            last_name,
             password,
         };
 
-        let arr = JSON.parse(localStorage.getItem("users"))
-        // window.location.href = "login.html"
-        console.log("Pp")
-        arr.push(user);
-        localStorage.setItem("users", JSON.stringify(arr));
-
-
+        localStorage.setItem("users", JSON.stringify(user));
+        window.location.href = "homepage.html"
     }
 
 

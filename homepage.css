@@ -1,100 +1,106 @@
 .dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+   position: relative;
+   display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    cursor: pointer;
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   padding: 12px 16px;
+   z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
-    display: block;
+   display: block;
 }
+
 #first_header {
-    width: 100%;
-    height: 25px;
-    background-color: green;
-    text-align: center;
-    color: white;
+   width: 100%;
+   height: 25px;
+   background-color: green;
+   text-align: center;
+   color: white;
 }
+
 .learn-dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+   position: relative;
+   display: inline-block;
 }
 
 .learn-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    cursor: pointer;
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   padding: 12px 16px;
+   z-index: 1;
 }
+
 .learn-dropdown:hover .learn-content {
-    display: block;
+   display: block;
 }
+
 #navbar {
-    display: flex;
-    height: 80px;
-    width: 100%;
-    gap: 200px;
-    /* margin-left: 200px; */
-    background-color: azure;
-    position: fixed;
-    margin-top: -10px;
+   display: flex;
+   height: 80px;
+   width: 100%;
+   gap: 175px;
+   top: 0;
+   /* margin-left: 200px; */
+   background-color: azure;
+   position: fixed;
 }
-#logo > img {
-    height: 40px;
-    margin-top: 10px;
+
+#logo>img {
+   height: 40px;
+   margin-top: 10px;
 }
-#right > img {
-    height: 30px;
-    width: 30px;
+
+#right>img {
+   height: 30px;
+   width: 30px;
 }
+
 #location {
-    display: flex;
+   display: flex;
 }
-#location > img {
-    height: 30px;
-    width: 30px;
+
+#location>img {
+   height: 30px;
+   width: 30px;
 }
+
 #right {
-    display: flex;
+   display: flex;
 }
+
 #left {
-    /* margin-left: 300px; */
-    gap: 50px;
-    display: flex;
-    margin-top: 15px;
-    margin-left: 200px;
+   /* margin-left: 300px; */
+   gap: 50px;
+   display: flex;
+   margin-top: 15px;
+   margin-left: 200px;
 }
+
 #right {
-    display: flex;
-    gap: 50px;
+   display: flex;
+   gap: 50px;
 }
-#location > img {
-    margin-top: 10px;
+
+#location>img {
+   margin-top: 10px;
 }
-#right > img {
-    margin-top: 15px;
+
+#right>img {
+   margin-top: 15px;
 }
+
 a {
    text-decoration: none;
-   color: black;
-}
-#cart {
-   height: 30px;
-    width: 30px;
 }
 
 
@@ -102,203 +108,233 @@ a {
 
 
 
-#banner > img {
-    height: 500px;
-    width: 100%;
+#banner>img {
+   height: 500px;
+   width: 100%;
 }
-#grow_with_kimaye{
-    height: 160px;
-    width: 100%;
-    background-color: rgb(63, 160, 63);
-    text-align: center;
-    color: white;
-}
- #specifications{
-    display: flex;
-    gap: 100px;
-    margin-left: 300px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
 
- #prod-cat {
-    background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
-    height: 1200px;
-    width: 100%;
-    text-align: center;
- }
- #prods > div > img:hover {
-    height: 350px;
-    width: 400px;
- }
- #prods {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
- }
- #prod > div {
-    border-radius: 20px;
- }
- #prods > div > img{
-    border-radius: 30px;
- }
- #prods > div > button {
-    background-color: red;
-    color: white;
-    width: 150px;
-    height: 40px;
-    border: 1px solid red;
-    border-radius: 20px;
- }
- #kimahi{
-    box-shadow: inset 0 0 5px #98cb4c;
-    height: 800px;
-    width: 100%;
-    background: #98CB4C;
-    border-radius: 10px;
-    /* font-family: PT Sans, 'MS Sans Serif', Geneva, sans-serif; */
-    display: flex;
-    gap: 150px;
- }
- #text_content > h3 {
-    font-size: 32px;
-    text-align: center;
-    margin-top: 120px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
- #fruit_img > img{
-    height: 700px;
-    margin-left: 100px;
-    margin-top: 50px;
-    /* margin-right: 100px; */
- }
- #text_content {
-    /* text-align: center; */
-    margin-left: 100px;
-    margin-right: 100px;
- }
- #text_content > p {
-    color: white;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
- #white-board{
-    height: 50px;
-    width: 450px;
-    background-color: white;
-   
- }
- #text_content > button {
-    height: 40px;
-    width: 150px;
-    margin-top: 30px;
-    background-color: white;
-    border: 0px solid white;
-    border-radius: 20px;
-    cursor: pointer;
- }
- .blocks {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    gap: 100px;
-    background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
- }
- .block1 {
-    display: flex;
-    gap: 100px;
-    margin-left: 100px;
- }
- .block1 > div {
-    width: 400px;
- }
- .block1 > div > h4 {
-    font-size: 26px;
- }
- .block1 > div > p {
-    font-size: 20px;
- }
- .block1 > div > img {
-    height: 400px;
-    width: 400px;
-    border-radius: 20px;
- }
- #bt1 > h1 {
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- }
- #bt1 > h3 {
-    text-align: center;
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
- }
- #bt1 {
-    background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
- }
- #jazz{
-    background-color: #ffbb54;
-    height: 500px;
-    width: 100%;
- }
- #p1 {
+#grow_with_kimaye {
+   height: 160px;
+   width: 100%;
+   background-color: rgb(63, 160, 63);
+   text-align: center;
+   color: white;
+}
+
+#specifications {
+   display: flex;
+   gap: 100px;
+   margin-left: 300px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#prod-cat {
+   background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+   height: 1200px;
+   width: 100%;
+   text-align: center;
+}
+
+#prods>div>img:hover {
+   height: 350px;
+   width: 400px;
+}
+
+#prods {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 100px;
+}
+
+#prod>div {
+   border-radius: 20px;
+}
+
+#prods>div>img {
+   border-radius: 30px;
+}
+
+#prods>div>button {
+   background-color: red;
+   color: white;
+   width: 150px;
+   height: 40px;
+   border: 1px solid red;
+   border-radius: 20px;
+}
+
+#kimahi {
+   box-shadow: inset 0 0 5px #98cb4c;
+   height: 800px;
+   width: 100%;
+   background: #98CB4C;
+   border-radius: 10px;
+   /* font-family: PT Sans, 'MS Sans Serif', Geneva, sans-serif; */
+   display: flex;
+   gap: 150px;
+}
+
+#text_content>h3 {
+   font-size: 32px;
+   text-align: center;
+   margin-top: 120px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#fruit_img>img {
+   height: 700px;
+   margin-left: 100px;
+   margin-top: 50px;
+   /* margin-right: 100px; */
+}
+
+#text_content {
+   /* text-align: center; */
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+#text_content>p {
+   color: white;
+   font-size: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#white-board {
+   height: 50px;
+   width: 450px;
+   background-color: white;
+
+}
+
+#text_content>button {
+   height: 40px;
+   width: 150px;
+   margin-top: 30px;
+   background-color: white;
+   border: 0px solid white;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+.blocks {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-template-rows: auto;
+   gap: 100px;
+   background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+}
+
+.block1 {
+   display: flex;
+   gap: 100px;
+   margin-left: 100px;
+}
+
+.block1>div {
+   width: 400px;
+}
+
+.block1>div>h4 {
+   font-size: 26px;
+}
+
+.block1>div>p {
+   font-size: 20px;
+}
+
+.block1>div>img {
+   height: 400px;
+   width: 400px;
+   border-radius: 20px;
+}
+
+#bt1>h1 {
+   text-align: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bt1>h3 {
+   text-align: center;
+   font-size: 22px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#bt1 {
+   background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+}
+
+#jazz {
+   background-color: #ffbb54;
+   height: 500px;
+   width: 100%;
+}
+
+#p1 {
    height: 350px;
    width: 500px;
    background-image: url(https://marathiquotes.in/wp-content/uploads/2021/09/Health-benefitof-pomegranate-in-marathi.jpg);
    border-radius: 20px;
    color: white;
    text-align: center;
-   
- }
- #p2 {
+
+}
+
+#p2 {
    height: 350px;
    width: 500px;
    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg);
-   border-radius: 20px; 
+   border-radius: 20px;
    color: white;
 }
- #bx1{
+
+#bx1 {
    display: flex;
    gap: 200px;
    margin-left: 150px;
    margin-top: 100px;
- }
- #p1 > h1 {
+}
+
+#p1>h1 {
    margin-top: 190px;
    font-size: 28px;
- }
- #p2 > h1 {
+}
+
+#p2>h1 {
    margin-top: 210px;
    font-size: 28px;
-   
- }
- #jazz_tit {
+
+}
+
+#jazz_tit {
    text-align: center;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    /* margin-top: 100px; */
- }
+}
 
 
 
- /* Footer */
+/* Footer */
 
- /* #footer{
+/* #footer{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(2, 1fr);
    gap: 700px;
    margin-left: 150px;
  } */
- #foot1 {
+#foot1 {
    display: flex;
    gap: 700px;
    margin-left: 150px;
- }
- #foot2 {
+}
+
+#foot2 {
    display: flex;
    gap: 700px;
    margin-left: 150px;
- }
- #footer {
+}
+
+#footer {
    background: #7d9c5b;
- }
- 
- 
+}
