@@ -114,6 +114,21 @@
     margin-top: 16px;
     margin-bottom: 55px;
   }
+  button{
+    cursor: pointer;
+    display: inline-block;
+    background-color: rgba(0, 128, 0, 0.815);
+    box-sizing: border-box;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    padding: 1.4em 1.7em;
+    text-align: center;
+    position: relative;
+    margin-top: 16px;
+    margin-bottom: 55px;
+  }
 
   #vikas_name{
     display: flex;

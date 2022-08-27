@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cartpage</title>
 </head>
-
+<link rel="stylesheet" href="homepage.css">
 <link rel="stylesheet" href="cart.css">
 
 <body>
+    <!-- <div id="first_header">
+        <h3>Delivering in Mumbai, Delhi and Gurugram | Same day delivery!</h3>
+    </div> -->
+    <div id="navbar"></div>
    <div class="vikas_cart_head">
-      <h1>cart</h1><br>
+      <h1>cart</h1>
       <p><span>Home  </span>  / cart</p>
    </div>
     
@@ -55,11 +59,13 @@
                 </div>
         </div>
 
-   <a href="checkout.html"> <button  class="vikas_proceed">PROCEED TO CHECKOUT</button></a>
-   <a href=""><button class="vikas_proceed">CONTINUE SHOPPING</button></a>
+   <button  class="vikas_proceed">PROCEED TO CHECKOUT</button>
+   <button class="vikas_proceed">CONTINUE SHOPPING</button>
 
    </div>
 </div>
+
+<div id="footer"></div>
   
    
     
@@ -67,3 +73,10 @@
 
 <script src="./cart.js"></script>
 </html>
+
+<script>
+    document.querySelector(".vikas_proceed").addEventListener("click",()=>{
+        window.location.href="checkout.html"
+    })
+</script>
+<script src="homepage.js" type="module"></script>

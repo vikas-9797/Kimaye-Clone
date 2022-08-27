@@ -6,7 +6,7 @@ data.map(function app(el){
     let tr2=document.createElement("tr");
 
     let pImg=document.createElement("img");
-    pImg.src=el.img;
+    pImg.src=el.image;
     pImg.setAttribute("class","productimg");
     let td2=document.createElement("td");
     td2.append(pImg);
