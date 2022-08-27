@@ -15,7 +15,7 @@ if(data.length==0){
   let store=document.createElement("button");
   store.innerText="RETURN TO SHOP";
   store.addEventListener("click", function (){
-    window.location.href="products.html";
+    window.location.href="all fruits.html";
   })
 document.getElementById("vikas_if_empty").append(img,blank,store);
 }
@@ -47,7 +47,7 @@ else{
     td1.append(cross);
       
     let pImg=document.createElement("img");
-    pImg.src=el.img;
+    pImg.src=el.image;
     pImg.setAttribute("class","productimg");
     let td2=document.createElement("td");
     td2.append(pImg);
@@ -109,7 +109,7 @@ else{
     total.style.fontSize="25px"
     total.style.fontWeight="bold"
     total.innerText=x;
-
+    total_sum(x)
     priceSumArr.push(x);
    
 
@@ -119,7 +119,13 @@ else{
     document.getElementById("vikas_tbody").append(tr2)
     
 });
+function total_sum(x){
+  var total=data.reduce((m,n)=>{
+      return m+x;
+  },0)
+console.log(total);
 
+}
 
 
 let sum=0;
