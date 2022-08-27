@@ -6,21 +6,20 @@ let navbar = () => {
     <div class="dropdown">
         <span>SHOP</span>
         <div class="dropdown-content">
-            <p>ALL FRUITS</p>
-            <p>ALL VEGGIES</p>
-            <p>FRESH CUTS</p>
-            <p>GIFTS BY KIMAYE</p>
-            <p>COMMUNITY BUYING</p>
+        <a href="./all fruits.html"><p>ALL FRUITS</p></a>
+        <a href="./all veggies.html"><p>ALL VEGGIES</p></a> 
+        <a href="./fresh cut.html"><p>FRESH CUTS</p></a>
+        <a href="./fruit combo.html"><p>GIFTS BY KIMAYE</p></a> 
+        
         </div>
     </div>
     <div class="learn-dropdown">
         <span>LEARN</span>
     
     <div class="learn-content">
-        <p>OUR STORY</p>
-        <p>WHY KIMAYE</p>
-        <p>TRACEABILITY</p>
-        <p>BEYOND FRUITS</p>
+    <a href="./our_story.html"><p>OUR STORY</p></a>
+    <a href="./our_story.html"></a> <p>TRACEABILITY</p>
+    <a href="./our_story.html"><p>BEYOND FRUITS</p></a> 
     </div>
 </div>
 <a href="">GROW</a>
@@ -37,7 +36,7 @@ let navbar = () => {
     <img id="profile" src="https://i.pinimg.com/originals/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg" alt="">
     <img id="cart" src="https://www.pngkey.com/png/full/154-1547182_bag-clipart-logo-png-shopping-bag-icon-png.png" alt="">
 
-
+    
 
 </div>`;
 }
@@ -74,3 +73,4 @@ let footer = () => {
 }
 
 export {navbar, footer};
+// <a href="./cart.html"></a>
