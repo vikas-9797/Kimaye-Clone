@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .body {
+      font-family: Karla, Arial, Helvetica, sans-serif;
+      background-color: #fff;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      color: #4c4c4c;
+      line-height: 1.2;
+      font-size: 14px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #CD171F;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #98cb4c;
+      border-radius: 10px;
+    }
+
+    ::selection {
+      color: #cd171f;
+      background: #98CB4C;
+    }
+
+    .banner {
+      display: flex;
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/why_kimaye_bg.jpg?v=1600179109);
+      padding: 15% 0;
+      background-repeat: no-repeat;
+      position: relative;
+      /* webkit-box-sizing: border-box; */
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      /* display: flex; */
+      align-items: center;
+      color: #fff;
+      padding: 0 3%;
+    }
+
+    .img {
+      /* display: block;
+      max-width: 100%;
+      height: auto; */
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    .hed {
+      font-size: 60px;
+      line-height: 1.4;
+      margin-bottom: 30px;
+      font-family: Bitterbrush;
+      color: rgb(100, 6, 6);
+      font-family: PT Sans, 'MS Sans Serif', Geneva, sans-serif;
+      color: #1b1919;
+    }
+
+    .bp {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+      font-family: PT Sans, Arial, Helvetica, sans-serif;
+      color: #4c4c4c;
+      font-size: 14px;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .girl_section {
+      position: relative;
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+      box-sizing: border-box;
+      font-family: PT Sans, Arial, Helvetica, sans-serif;
+      color: #4c4c4c;
+      font-size: 14px;
+
+    }
+
+    .section_title {
+      font-size: 60px;
+      text-align: center;
+      font-family: Bitterbrush;
+      letter-spacing: 1px;
+      position: relative;
+      margin: 0;
+      font-family: PT Sans, 'MS Sans Serif', Geneva, sans-serif;
+      color: #1b1919;
+    }
+
+    .section_desc {
+      font-size: 30px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #222;
+    }
+
+    .grass {
+      position: absolute;
+      right: 0;
+      bottom: 9%;
+      transform: rotateY(180deg);
+      z-index: 2;
+    }
+
+    .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .girl {
+      margin: 0 auto;
+    }
+
+    .girl>img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+
+    }
+
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    div {
+      display: block;
+    }
+
+    .section_title {
+      font-size: 60px;
+      text-align: center;
+      font-family: Bitterbrush;
+      letter-spacing: 1px;
+      position: relative;
+      margin: 0;
+    }
+
+    .section_desc {
+      font-size: 30px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #222;
+    }
+
+    .essential_pillars {
+      margin: 5% 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .yellow_section .essential_pillars .pillar {
+      padding-right: 20px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .yellow_section {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.png?v=1600179877);
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .yellow_section .essential_pillars .pillar .pillar_title {
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .yellow_section .essential_pillars .pillar {
+      padding-right: 20px;
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 30px;
+      width: 33.33%;
+    }
+
+    .yellow_section .essential_pillars .pillar .pillar_txt {
+      bottom: 25%;
+      right: 20px;
+    }
+
+    .shot_on_location_txt {
+      bottom: 15px;
+      font-size: 15px;
+      position: absolute;
+      right: 15px;
+      color: #fff;
+      margin: 0;
+      text-shadow: 1px 1px #4c4c4c;
+      font-weight: 800;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .our_process .our_process_content {
+      padding-top: 25%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    .our_process {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Our-Process-min.png?v=1614336701);
+    }
+
+    .our_process .section_title {
+      font-size: 36px;
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/title_bg.png?v=1600179108);
+      background-repeat: no-repeat;
+      background-position: center center;
+      padding: 28px;
+      color: #fff;
+    }
+
+    .our_process .para {
+      width: 50%;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+
+    .owl-carousel {
+      margin-top: 7%;
+      margin-bottom: 3%;
+    }
+
+    .owl-carousel.owl-loaded {
+      display: block;
+    }
+
+    .para {
+      font-size: 18px;
+      font-family: PT Sans, sans-serif;
+    }
+
+    .owl-carousel,
+    .owl-carousel .owl-stage {
+      -ms-touch-action: pan-Y;
+      touch-action: manipulation;
+      /* -moz-backface-visibility: hidden; */
+    }
+
+    .owl-carousel .owl-item {
+      position: relative;
+      min-height: 1px;
+      float: left;
+      /* -webkit-backface-visibility: hidden; */
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    .green_bg {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/green_bg_8462a28d-865f-449b-9900-aab095be0a70.png?v=1600179876);
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    .green_bg.container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    .green_bg .owl-carousel .step {
+      position: relative;
+      padding-left: 25px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    .green_bg .owl-carousel {
+      margin-top: 7%;
+      margin-bottom: 3%;
+    }
+
+    .green_bg.owl-carousel .owl-item {
+      position: relative;
+      min-height: 1px;
+      float: left;
+      -webkit-backface-visibility: hidden;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+    }
+
+    .green_bg .owl-carousel .step .step_content .step_para {
+      color: #fff;
+      font-size: 20px;
+      font-family: PT Sans, sans-serif;
+    }
+
+    .green_bg .owl-carousel .step .step_content .step_title {
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .green_bg.owl-carousel div.owl-item img {
+      width: auto;
+      display: inline;
+    }
+
+    .green_bg.img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .green_bgimg {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    .world_map.section_desc {
+      font-size: 30px;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #222;
+    }
+
+    .world_map .red_bg {
+      font-size: 36px;
+      font-family: Bitterbrush;
+      font-weight: 600;
+      letter-spacing: 1px;
+      background-size: contain;
+      padding: 20px 0 0;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Health-Benefits-Product-Inside2.png?v=1598532578);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .world_map .para {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .world_map.p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .all_words {
+      display: flex;
+      align-items: center;
+    }
+
+    .all_words.img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .all_words.img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    .all_words .text .section_title {
+      text-align: left;
+    }
+
+    .all_words.container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .all_words.para {
+      font-size: 18px;
+      font-family: PT Sans, sans-serif;
+    }
+
+    .all_words {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.jpg?v=1600154659);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 12% 0;
+    }
+
+    .all_words .text {
+      padding-left: 5%;
+    }
+
+    .brand_signs {
+      padding-top: 5%;
+    }
+
+    .brand_signs .brands .row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+    }
+
+    .brand_signs .brands .row .content {
+      max-width: 25%;
+      position: relative;
+    }
+
+    .row {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    .brand_signs .brands {
+      margin-top: 5%;
+      background-color: #f4f4f2;
+      padding: 5%;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="banner">
+    <div class="img">
+      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fruit_box.png?v=1600179109" alt="">
+    </div>
+    <div class="banner_text">
+      <h1 class="hed">Frout Grown With Passion
+        <br>
+        <span class="red_bg">and delevery with care</span>
+      </h1>
+      <p class="bp">Kimaye is synonymous with fruit safety</p>
+
+    </div>
+  </section>
+  <section class="girl_section">
+    <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/grass-1.png?v=1600166733" alt="Grass Image"
+      class="img-responsive grass">
+    <div class="container">
+      <h2 class="section_title">Every time you eat a Kimaye fruit,</h2>
+      <p class="section_desc">we want you to feel free of any worries related to fruit safety and hygiene.</p>
+      <div class="girl"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/girl.png?v=1600179109"
+          class="img-responsive"></div>
+    </div>
+  </section>
+  <section class="section yellow_section">
+    <div class="container">
+      <h2 class="section_title">We Always Deliver</h2>
+      <p class="section_desc">Kimaye stands tall on three essential pillars</p>
+      <div class="essential_pillars">
+        <div class="pillar pillar1">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/safety_4664f0b6-22c9-46e4-9552-6eacfe1cc78d.png?v=1600179109"
+            class="img-responsive">
+          <h5 class="pillar_title">Safety</h5>
+          <p class="pillar_desc">We have set stringent standards for all our fruits throughout the entire
+            farm
+            to home journey.</p>
+        </div>
+        <div class="pillar pillar1">
+          <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/technology.png?v=1600179109"
+            class="img-responsive">
+          <h5 class="pillar_title">Technology</h5>
+          <p class="pillar_desc">Our innovations enabling 100% product traceability and longer shelf life
+            keeping the fruits fresh.</p>
+        </div>
+        <div class="pillar pillar1">
+          <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/social_impact.png?v=1600179109"
+            class="img-responsive">
+          <p class="shot_on_location_txt pillar_txt">Shot on Location</p>
+          <h5 class="pillar_title">Social Impact</h5>
+          <p class="pillar_desc">We do good for our farmers, create rural jobs, drive gender equality and
+            protect the environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section our_process">
+    <div class="our_process_content"></div>
+    <h2 class="section_title">Our Processes Ensure We Keep Our Promise</h2>
+    <p class="para">To ensure safety, our products go through multiple quality checks that adhere to global standards.
+      Our supply chain is contamination-free, with minimum handling and maximum hygiene of our produce. <br>
+      We don’t stop there. All our fruits are impeccable storytellers through our 100% traceability feature. Just flip
+      the fruit, and find a QR code affixed to it. Once you scan the code, you will find the entire journey of the fruit
+      from farm to home. You can get to know where your fruit was grown, who was the farmer, and how your fruit reached
+      you. We believe in being 100% transparent with our consumers.</p>
+  </section>
+  <section class="section green_bg">
+    <h2 class="section_title">Four Steps to Perfection</h2>
+    <div class="container">
+      <div class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage"
+            style="transform: translate3d(-2680px, 0px, 0px); transition: all 2s ease 0s; width: 5360px;">
+            <div class="owl-item cloned" style="width: 470px; margin-right: 200px;">
+              <div class="step step3">
+                <div class="step_image"><img
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/step3.png?v=1600179108"
+                    class="img-responsive"></div>
+                <div class="step_content">
+                  <h5 class="step_title">Earning the Kimaye badge</h5>
+                  <p class="step_para">Quality checks at our automated state-of-art packhouse ensure only the best
+                    fruits earn the Kimaye badge. All our fruits are sorted and graded in these facilities
+                    which are FSSC 22000, HACCP, BRC certified. These certifications are a testimony that we
+                    follow world-class practices at our unit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 470px; margin-right: 200px;">
+              <div class="step step4">
+                <div class="step_image"><img
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/step4.png?v=1600179108"
+                    class="img-responsive"></div>
+                <div class="step_content">
+                  <h5 class="step_title">Zero-touch processes</h5>
+                  <p class="step_para">Our fruits are packaged with care so that they remain fresh and safe during
+                    the transit. We follow a contamination-free supply chain to deliver delightful, yummy,
+                    and safe fruits.</p>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 470px; margin-right: 200px;">
+              <div class="step">
+                <div class="step_image"><img
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/step1.png?v=1600179108"
+                    class="img-responsive"></div>
+                <div class="step_content">
+                  <h5 class="step_title">Grown responsibly</h5>
+                  <p class="step_para">We follow Global Good Agricultural Practices (G.A.P) and train our farmers
+                    to undertake activities that ensure the growth of healthy fruits. We test multiple lots
+                    in accredited labs for over 180 chemicals. This ensures that our fruits are 100% safe to
+                    consume.</p>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item" style="width: 470px; margin-right: 200px;">
+              <div class="step step2">
+                <div class="step_image"><img
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/step2.png?v=1600179108"
+                    class="img-responsive"></div>
+                <div class="step_content">
+                  <h5 class="step_title">Handpicked at farms</h5>
+                  <p class="step_para">Our trained Harvesting teams ensure only the best fruits are picked from the
+                    tree. Our fruits have no need to travel to the mandis! The fruit selection is done at
+                    the farm itself to deliver consistent freshness and taste.</p>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 470px; margin-right: 200px;">
+              <div class="step step3">
+                <div class="step_image"><img
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/step3.png?v=1600179108"
+                    class="img-responsive"></div>
+                <div class="step_content">
+                  <h5 class="step_title">Earning the Kimaye badge</h5>
+                  <p class="step_para">Quality checks at our automated state-of-art packhouse ensure only the best
+                    fruits earn the Kimaye badge. All our fruits are sorted and graded in these facilities
+                    which are FSSC 22000, HACCP, BRC certified. These certifications are a testimony that we
+                    follow world-class practices at our unit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: 470px; margin-right: 200px;">
+              <div class="step step4">
+                <div class="step_image"><img
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/step4.png?v=1600179108"
+                    class="img-responsive"></div>
+                <div class="step_content">
+                  <h5 class="step_title">Zero-touch processes</h5>
+                  <p class="step_para">Our fruits are packaged with care so that they remain fresh and safe during
+                    the transit. We follow a contamination-free supply chain to deliver delightful, yummy,
+                    and safe fruits.</p>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 470px; margin-right: 200px;">
+              <div class="step">
+                <div class="step_image"><img
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/step1.png?v=1600179108"
+                    class="img-responsive"></div>
+                <div class="step_content">
+                  <h5 class="step_title">Grown responsibly</h5>
+                  <p class="step_para">We follow Global Good Agricultural Practices (G.A.P) and train our farmers
+                    to undertake activities that ensure the growth of healthy fruits. We test multiple lots
+                    in accredited labs for over 180 chemicals. This ensures that our fruits are 100% safe to
+                    consume.</p>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: 470px; margin-right: 200px;">
+              <div class="step step2">
+                <div class="step_image"><img
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/step2.png?v=1600179108"
+                    class="img-responsive"></div>
+                <div class="step_content">
+                  <h5 class="step_title">Handpicked at farms</h5>
+                  <p class="step_para">Our trained Harvesting teams ensure only the best fruits are picked from the
+                    tree. Our fruits have no need to travel to the mandis! The fruit selection is done at
+                    the farm itself to deliver consistent freshness and taste.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-nav disabled">
+          <div class="owl-prev">prev</div>
+          <div class="owl-next">next</div>
+        </div>
+        <div class="owl-dots">
+          <div class="owl-dot"><span></span></div>
+          <div class="owl-dot active"><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section world_map">
+    <h2 class="section_title">We’ve Made it to the World Map</h2>
+    <p class="section_desc">35 countries | Delivering 40,000 tons of fruit annually</p>
+    <div class="map"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/map.png?v=1600179108"
+        class="img-responsive"></div>
+    <h4 class="red_bg">Also, a humblebrag:</h4>
+    <p class="para">We deliver to the most demanding markets in the world including Europe and Middle East and
+      are proud to work directly with most premium retailers. We have achieved extremely high standards thanks
+      to our farmers and stringent process controls. Domestically also we work with major retailers such as
+      Big Bazaar, Foodhall, More, and Star Bazaar in Mumbai, Delhi, Hyderabad, and Bengaluru.</p>
+  </section>
+  <section class="words">
+    <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/grass-1.png?v=1600166733" alt="Grass Image"
+      class="img-responsive grass">
+    <div class="container">
+      <div class="all_words">
+        <div class="image">
+          <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/words_revised_img.png?v=1600870298"
+            class="img-responsive" alt="All Words Image">
+        </div>
+        <div class="text">
+          <h2 class="section_title">We’re Not All Words</h2>
+          <p class="para">Still not convinced? Well, take a sneak peek at our accolades, which will keep
+            you longing for more fruits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="brand_signs">
+    <h2 class="section_title">The Signs of a Brand You Can Trust</h2>
+    <div class="container">
+      <div class="brands">
+        <div class="row">
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/GLOBALGAP_-_INI_Agri_Pvt._Ltd._Exp_09-04-2021.pdf?v=1600846056"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/01.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 1"></a></div>
+          </div>
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/GRASP_-_INI_Agri_Pvt.Ltd._Exp_31-03-2021.pdf?v=1600846057"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/02.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 2"></a></div>
+          </div>
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/BRC_Certificate_INI_Farms-_Exp_25.12.2020.pdf?v=1600846056"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/03.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 3"></a></div>
+          </div>
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/FSSC22000_Exp_29.06.2021.pdf?v=1600846056"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/04.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 4"></a></div>
+          </div>
+
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/HACCP_Exp_20.12.2022.pdf?v=1600846056"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/05.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 5"></a></div>
+          </div>
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/SMETA-6_0-Certificate-INI-Farms-Pvt-Vasunde-IPH1.pdf?v=1600846056"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/06.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 6"></a></div>
+          </div>
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/SMETA-6_0-Certificate-INI-Farms-Pvt-Vasunde-IPH1.pdf?v=1600846056"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/07.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 7"></a></div>
+          </div>
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/APEDA-FFV-PH-287-2018-19_Signed.pdf?v=1600846056"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/08.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 8"></a></div>
+          </div>
+
+          <div class="content">
+            <div class="col"><a target="_blank"
+                href="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/FSSAI_license_-_INI.pdf?v=1600846058"><img
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/09.jpg?v=1600179108"
+                  class="img-responsive" alt="Logo 9"></a></div>
+          </div>
+          <div class="content">
+            <div class="col"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/10.jpg?v=1600179108"
+                class="img-responsive" alt="Logo 10">
+            </div>
+          </div>
+          <div class="content">
+            <div class="col"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/11.jpg?v=1600179108"
+                class="img-responsive" alt="Logo 11">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
