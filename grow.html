@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #blog-new .banner {
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/grow_by_kimaye.jpg?v=1609401696);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center right;
+            height: 58vh;
+            position: relative;
+        }
+
+        .blog-post-loop .entry-title {
+            min-height: auto;
+        }
+
+        .blog-post-loop .post-img-wrapp {
+            background-color: transparent !important;
+        }
+
+        .pt30 {
+            padding: 30px 0px;
+        }
+
+        #blog-new .banner {
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/grow_by_kimaye.jpg?v=1609401696);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center right;
+            height: 58vh;
+            position: relative;
+        }
+
+        @media screen and (max-width: 767px) {
+            #blog-new .banner {
+                background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Blogs_Banner.jpg?v=1609757872);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+
+        #blog-new .banner .banner_content .heading .red_bg {
+
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/red_patch_traceabil.png?v=1600169390);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 15px;
+        }
+
+        .pt10-blog {
+            padding-top: 0px !important;
+        }
+
+        .page-title {
+            padding-top: 20px !important;
+        }
+
+        #blog-new .heading {
+            font-size: 46px;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            font-family: Bitterbrush;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+
+            #blog-new .banner {
+                background-size: 100%;
+                height: 33vh;
+            }
+
+        }
+
+
+        @media screen and (max-width: 767px) {
+            .gl_mb_40 {
+                margin-bottom: 10px !important;
+            }
+
+            #blog-new.contact_info_sec {
+
+                padding-bottom: 0px;
+            }
+
+            #contact_us .text {
+                padding: 20px;
+            }
+
+            #blog-new .contact_form_sec {
+                padding: 20px;
+            }
+
+
+            #blog-new .banner {
+                background-size: 100%;
+                height: 53vh;
+            }
+
+            #blog-new .banner .banner_content .heading .red_bg {
+                padding: 7px;
+            }
+
+            #blog-new .banner .banner_content .heading {
+                font-size: 23px;
+            }
+
+            #blog-new .banner .banner_content {
+                align-items: baseline;
+            }
+
+
+        }
+
+        .title-size-small .entry-title,
+        .title-size-small h1 {
+            font-size: 36px;
+        }
+
+        page-title h1 {
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        .breadcrumbs span {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .title-design-centered .breadcrumbs {
+            line-height: 1.6;
+            margin-top: 5px;
+        }
+
+        .page-title .entry-header .breadcrumbs>a,
+        .page-title .entry-header .breadcrumbs>span {
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .title-size-small .entry-title,
+        .title-size-small h1 {
+            font-size: 36px;
+        }
+
+        .gl_page_title.page-title-default {
+            padding-top: 0;
+            margin-bottom: 1em;
+        }
+
+        .gl_page_title.page-title-default {
+            background-color: #437111;
+        }
+
+        .page-title h1 {
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        .page-title {
+            margin-top: 0;
+            padding-top: 6em;
+            margin-bottom: 3em;
+        }
+
+        .title-size-small {
+            padding: 15px 0;
+        }
+
+        .page-title {
+            width: 100%;
+            border-bottom: 1px solid rgba(168, 168, 168, 0.15);
+            position: relative;
+            margin-top: -40px;
+            margin-bottom: 40px;
+        }
+
+        .color-scheme-light,
+        .color_sticky_light.act-scroll {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        header .breadcrumbs>span {
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        header .breadcrumbs>span {
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .color-scheme-light ul li,
+        .color_sticky_light.act-scroll ul li {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .basel-product-categories li {
+            position: relative;
+        }
+
+        .basel-product-categories>li {
+            display: inline-block;
+        }
+
+        .color-scheme-light,
+        .color_sticky_light.act-scroll {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .blog-post-loop .post-img-wrapp>a img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .post-img-wrapp img.lazyloaded {
+            border-radius: 2em;
+        }
+
+        .sidebar-container {
+            margin-bottom: 40px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .widget_search .searchform div input[type="text"] {
+            box-shadow: none;
+            padding-right: 100px;
+        }
+
+        .widget_search .searchform div #searchsubmit {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .blog-post-loop .entry-title a {
+            font-size: 20px;
+        }
+
+        .blog-post-loop .entry-title a {
+            font-family: inherit;
+            font-weight: inherit;
+            font-style: inherit;
+            color: #1b1919;
+            text-decoration: none;
+        }
+
+        .main-page-wrapper:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-color: transparent;
+            background-size: 100% auto;
+            background-repeat: repeat-y;
+            top: 0;
+            height: 100%;
+            opacity: .25;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .blog-post-loop .post-img-wrapp>a img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .product-element-top img {
+            width: 100%;
+        }
+
+        .lazyloaded {
+            opacity: 1;
+        }
+
+        .w__100 {
+            width: 100%;
+        }
+
+        a img {
+            border: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .title,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Karla, Arial, Helvetica, sans-serif;
+            color: #1b1919;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        .info-box-inner h6 {
+            font-family: PT Sans, 'MS Sans Serif', Geneva, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        menu>li.menu-item-design-sized .sub-menu>li>a {
+            font-family: PT Sans, 'MS Sans Serif', Geneva, sans-serif;
+            color: #1b1919;
+        }
+
+        .blog-post-loop .entry-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            letter-spacing: 0.3px;
+            margin-left: 90px;
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        blog-design-default-alt .entry-title {
+            margin-left: 0;
+        }
+
+        .font-title {
+            font-family: PT Sans, 'MS Sans Serif', Geneva, sans-serif;
+            color: #252222;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        blog-post-loop .entry-title {
+            font-size: 28px !important;
+        }
+
+        .blog-post-loop .entry-title {
+            min-height: 0;
+            height: 50px;
+            line-height: 27px;
+        }
+
+        .blog-post-loop .entry-title {
+            min-height: auto;
+        }
+
+        .blog-post-loop.has-post-thumbnail .entry-title,
+        .blog-post-loop.has-post-thumbnail .meta-post-categories {
+            margin-left: 0;
+        }
+
+        .blog-post-loop .post-img-wrapp>a {
+            display: block;
+            margin: -1px;
+            -webkit-transition: 1s ease-out;
+            -moz-transition: 1s ease-out;
+            -o-transition: 1s ease-out;
+            transition: 1s ease-out;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -o-transform: scale(1);
+        }
+
+        .blog-post-loop a {
+            color: #4e4e4e;
+        }
+
+        .db {
+            display: block;
+        }
+
+        .pr {
+            position: relative;
+        }
+
+        a {
+            color: #202020;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        a,
+        abbr,
+        acronym,
+        address,
+        applet,
+        article,
+        aside,
+        audio,
+        b,
+        big,
+        blockquote,
+        body,
+        canvas,
+        caption,
+        center,
+        cite,
+        code,
+        dd,
+        del,
+        details,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        embed,
+        fieldset,
+        figcaption,
+        figure,
+        footer,
+        form,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        header,
+        hgroup,
+        html,
+        i,
+        iframe,
+        img,
+        ins,
+        kbd,
+        label,
+        legend,
+        li,
+        mark,
+        menu,
+        nav,
+        object,
+        ol,
+        output,
+        p,
+        pre,
+        q,
+        ruby,
+        s,
+        samp,
+        section,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        summary,
+        sup,
+        table,
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        time,
+        tr,
+        tt,
+        u,
+        ul,
+        var,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+
+        a {
+            color: #337ab7;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .blog-post-loop .entry-thumbnail {
+            margin-bottom: 15px;
+            position: relative;
+            display: block;
+            text-align: center;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            perspective: 800px;
+            -webkit-perspective: 800px;
+        }
+
+        .blog-post-loop .post-img-wrapp {
+            background-color: transparent !important;
+        }
+
+        .blog-post-loop .post-img-wrapp,
+        .spb_single_image .gl_single_image-wrapper,
+        .spb_single_image .gl_figure {
+            display: block;
+        }
+
+        .blog-post-loop .post-img-wrapp {
+            background-color: #000;
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .blog-design-default-alt .entry-thumbnail {
+            margin-bottom: 15px;
+        }
+
+        .blog-post-loop .entry-title a {
+            font-family: inherit;
+            font-weight: inherit;
+            font-style: inherit;
+            color: #1b1919;
+            text-decoration: none;
+        }
+
+        .blog-post-loop .entry-title a {
+            font-size: 20px;
+        }
+
+        .blog-design-default-alt .entry-content {
+            margin-bottom: 25px;
+            padding: 0 5%;
+        }
+
+        p {
+            line-height: 1.7;
+            font-family: PT Sans, Arial, Helvetica, sans-serif;
+            color: #4c4c4c;
+            font-size: 14px;
+        }
+
+        .blog-post-loop .entry-content>p {
+            margin-bottom: 15px;
+        }
+
+        .blog-design-default-alt {
+            text-align: center;
+        }
+
+        .blog-post-loop {
+            margin-bottom: 100px;
+            position: relative;
+        }
+
+        .blog-design-default-alt .entry-meta {
+            margin-bottom: 20px;
+            margin-left: 0;
+        }
+
+        blog-post-loop .entry-meta {
+            margin-bottom: 15px;
+            margin-left: 92px;
+        }
+
+        .hide {
+            display: none !important;
+        }
+
+        .blog-design-default-alt {
+            text-align: center;
+        }
+
+        .blog-post-loop .entry-thumbnail {
+            margin-bottom: 15px;
+            position: relative;
+            display: block;
+            text-align: center;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            perspective: 800px;
+            -webkit-perspective: 800px;
+        }
+
+        .blog-post-loop .post-date {
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 9px rgb(0 0 0 / 10%);
+            z-index: 2;
+            display: inline-block;
+            min-width: 53px;
+            text-align: center;
+        }
+
+        .blog-post-loop .post-date .post-date-day {
+            padding-top: 4px;
+            font-size: 24px;
+        }
+
+        .blog-post-loop .meta-post-categories>a {
+            display: inline-block;
+            line-height: 25px;
+            color: #fff;
+            text-transform: none;
+            font-size: 12px;
+        }
+
+        .blog-post-loop.has-post-thumbnail .entry-meta {
+            margin-left: 2px;
+        }
+
+        .type-post .entry-meta {
+            font-family: PT Sans, 'Comic Sans MS', cursive;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .post-date-month {
+            display: block;
+            color: #1b1919;
+        }
+        .blog-post-loop .post-date .post-date-month {
+    padding-bottom: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+date .post-date-month {
+    display: block;
+    color: #1b1919;
+}
+.blog-post-loop .post-img-wrapp {
+    background-color: transparent !important;
+}
+.gl_figure {
+    display: block;
+}
+.blog-post-loop .post-img-wrapp {
+    background-color: #000;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.blog-post-loop .post-img-wrapp > a {
+    display: block;
+    margin: -1px;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -o-transition: 1s ease-out;
+    transition: 1s ease-out;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+}
+.blog-post-loop a {
+    color: #4e4e4e;
+}
+.db {
+    display: block;
+}
+.pr {
+    position: relative;
+}
+a {
+    color: #202020;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+.blog-design-default-alt {
+    text-align: center;
+}
+.blog-post-loop .entry-content p, .comments-area .comment-list li p {
+    line-height: 1.7;
+}
+.blog-post-loop .entry-content > p {
+    margin-bottom: 15px;
+}
+.font-default {
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.blog-design-default-alt .liner-continer {
+    display: table-row;
+}
+.liner-continer {
+    display: table-row;
+}
+.btn-style-link {
+    padding: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-transform: capitalize;
+}
+.btn-style-link {
+    background-color: transparent;
+    color: #6d6d6d;
+    border-color: #b5b5b5;
+}
+.added_to_cart, .btn, .button, button, input[type="submit"] {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border-radius: 0;
+    border: 1px solid #ececec;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    background-color: #ececec;
+    color: #3e3e3e;
+    padding: 10px 20px;
+}
+a {
+    color: #202020;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+.liner-continer .left-line {
+    padding-right: 20px;
+}
+.liner-continer .left-line, .liner-continer .right-line {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+.blog-design-default-alt .liner-continer .social-icons {
+    white-space: nowrap;
+    width: auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+.text-center {
+    text-align: center;
+}
+.text-center {
+    text-align: center!important;
+}
+.text-center {
+    text-align: center;
+}
+.social-icons {
+    display: block;
+}
+.text-center {
+    text-align: center;
+}
+.text-center {
+    text-align: center;
+}
+ol, ul {
+    list-style: none;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.liner-continer .right-line {
+    padding-left: 20px;
+}
+.liner-continer .left-line, .liner-continer .right-line {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+.blog-design-default-alt {
+    text-align: center;
+}
+.blog-post-loop {
+    margin-bottom: 100px;
+    position: relative;
+}
+basel-pagination {
+    text-align: center;
+}
+.basel-pagination .current {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+.basel-pagination .current, .basel-pagination .inactive {
+    border: 1px solid transparent;
+    border-bottom-color: #b1b1b1;
+    display: inline-block;
+    text-align: center;
+    width: 34px;
+    line-height: 32px;
+    margin-right: 6px;
+    font-size: 16px;
+    color: #000;
+}
+.basel-pagination {
+    text-align: center;
+}
+.clear {
+    clear: both;
+    width: 100%;
+}
+.blog-design-default-alt {
+    text-align: center;
+}
+.blog-post-loop {
+    margin-bottom: 100px;
+    position: relative;
+}
+.sidebar-container {
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.8);
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="clear"></div>
+    <div class="globoRecommendationsTop"></div>
+    <div class="main-page-wrapper pt10-blog">
+        <div id="blog-new">
+            <section class="banner">
+
+
+            </section>
+        </div>
+        <div
+            class="gl_page_title page-title page-title-default title-size-small color-scheme-light title-design-centered">
+            <div class="container">
+                <header class="entry-header">
+                    <h1 class="entry-title">Grow with Kimaye</h1>
+                    <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#"><a href="/" rel="v:url"
+                            property="v:title">Home</a> » <span class="current">Archive by Category "Grow with
+                            Kimaye"</span></div><!-- .breadcrumbs -->
+                    <ul class="basel-product-categories">
+                        <li class="cat-item"><a
+                                href="https://kimaye.com/blogs/grow-with-kimaye/tagged/nutrition">Nutrition</a></li>
+                        <li class="cat-item"><a
+                                href="https://kimaye.com/blogs/grow-with-kimaye/tagged/lifestyle-modification">Lifestyle
+                                Management</a></li>
+                        <li class="cat-item"><a href="#">Child's Nutrition</a></li>
+                        <li class="cat-item"><a
+                                href="https://kimaye.com/blogs/grow-with-kimaye/tagged/storage-handling">Storage &amp;
+                                Handling</a></li>
+                    </ul>
+
+
+                </header>
+            </div>
+        </div>
+        <div class="container pt30">
+            <div class="row">
+                <div class="row site-content col-sm-9" role="main">
+                    <article id="post-556609306779"
+                        class="blog-design-default-alt post-556609306779 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div>
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">24</span><span class="post-date-month">Jul</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/top-fruit-safety-tips-you-should-be-swearing-by-every-time-you-consume-them">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_50x50.jpg?v=1627119119"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.499605367008682" data-sizes="auto"
+                                            alt="Top Fruit Safety Tips You Should Be Swearing By Every Time You Consume Them ."
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_180x.jpg?v=1627119119 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_360x.jpg?v=1627119119 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_540x.jpg?v=1627119119 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_720x.jpg?v=1627119119 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_900x.jpg?v=1627119119 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_1080x.jpg?v=1627119119 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_1296x.jpg?v=1627119119 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_1512x.jpg?v=1627119119 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_1728x.jpg?v=1627119119 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_2048x.jpg?v=1627119119 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_180x.jpg?v=1627119119 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_360x.jpg?v=1627119119 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_540x.jpg?v=1627119119 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_720x.jpg?v=1627119119 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_900x.jpg?v=1627119119 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_1080x.jpg?v=1627119119 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_1296x.jpg?v=1627119119 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_1512x.jpg?v=1627119119 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_1728x.jpg?v=1627119119 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_2048x.jpg?v=1627119119 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header>
+                        <h3 class="entry-title"><a
+                                href="/blogs/grow-with-kimaye/top-fruit-safety-tips-you-should-be-swearing-by-every-time-you-consume-them"
+                                rel="bookmark">Top Fruit Safety Tips You Should Be Swearing By Every Time You Consume
+                                Them .</a></h3>
+                        <div class="entry-content">
+                            <p>Fresh fruits bring with them a horde of health benefits, but it’s the way we consume them
+                                that is more important. While fruits have the ability to prevent many diseases such as
+                                cancer, heart stroke,...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/top-fruit-safety-tips-you-should-be-swearing-by-every-time-you-consume-them">Read
+                                    more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/top-fruit-safety-tips-you-should-be-swearing-by-every-time-you-consume-them"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <article id="post-556569264283"
+                        class="blog-design-default-alt post-556569264283 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">19</span><span class="post-date-month">Jul</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/fruits-rich-in-vitamin-c-that-you-should-be-eating-everyday">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_50x50.jpg?v=1626676701"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.4992503748125936" data-sizes="auto"
+                                            alt="Fruits Rich In Vitamin C That You Should Be Eating Everyday"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_180x.jpg?v=1626676701 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_360x.jpg?v=1626676701 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_540x.jpg?v=1626676701 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_720x.jpg?v=1626676701 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_900x.jpg?v=1626676701 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_1080x.jpg?v=1626676701 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_1296x.jpg?v=1626676701 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_1512x.jpg?v=1626676701 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_1728x.jpg?v=1626676701 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_2048x.jpg?v=1626676701 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_180x.jpg?v=1626676701 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_360x.jpg?v=1626676701 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_540x.jpg?v=1626676701 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_720x.jpg?v=1626676701 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_900x.jpg?v=1626676701 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_1080x.jpg?v=1626676701 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_1296x.jpg?v=1626676701 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_1512x.jpg?v=1626676701 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_1728x.jpg?v=1626676701 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_2048x.jpg?v=1626676701 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a
+                                href="/blogs/grow-with-kimaye/fruits-rich-in-vitamin-c-that-you-should-be-eating-everyday"
+                                rel="bookmark">Fruits Rich In Vitamin C That You Should Be Eating Everyday</a></h3>
+                        <div class="entry-content">
+                            <p>Remember the times when our mothers used to chase us every day with a bowl of fruits when
+                                we were kids. Well, she had pretty good reasons behind doing the same. Fruits,
+                                especially the ones...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/fruits-rich-in-vitamin-c-that-you-should-be-eating-everyday">Read
+                                    more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/fruits-rich-in-vitamin-c-that-you-should-be-eating-everyday"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                    <article id="post-556516147355"
+                        class="blog-design-default-alt post-556516147355 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">07</span><span class="post-date-month">Jul</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/how-to-remove-and-clean-harmful-pesticides-from-fruits">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_50x50.jpg?v=1625638895"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.5" data-sizes="auto"
+                                            alt="How To Remove And Clean Harmful Pesticides From Fruits"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_180x.jpg?v=1625638895 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_360x.jpg?v=1625638895 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_540x.jpg?v=1625638895 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_720x.jpg?v=1625638895 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_900x.jpg?v=1625638895 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_1080x.jpg?v=1625638895 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_1296x.jpg?v=1625638895 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_1512x.jpg?v=1625638895 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_1728x.jpg?v=1625638895 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_2048x.jpg?v=1625638895 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_180x.jpg?v=1625638895 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_360x.jpg?v=1625638895 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_540x.jpg?v=1625638895 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_720x.jpg?v=1625638895 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_900x.jpg?v=1625638895 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_1080x.jpg?v=1625638895 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_1296x.jpg?v=1625638895 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_1512x.jpg?v=1625638895 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_1728x.jpg?v=1625638895 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_2048x.jpg?v=1625638895 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a
+                                href="/blogs/grow-with-kimaye/how-to-remove-and-clean-harmful-pesticides-from-fruits"
+                                rel="bookmark">How To Remove And Clean Harmful Pesticides From Fruits</a></h3>
+                        <div class="entry-content">
+                            <p>Summers have arrived and so have the days where we can soak ourselves in the pleasure of
+                                treating ourselves to delicious fruits like mangoes, water melons, grapes and so on.
+                                After all, aside of helping...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/how-to-remove-and-clean-harmful-pesticides-from-fruits">Read
+                                    more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/how-to-remove-and-clean-harmful-pesticides-from-fruits"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <div class="clearfix clearfix visible-sm-block"></div>
+                    <article id="post-556425576603"
+                        class="blog-design-default-alt post-556425576603 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">01</span><span class="post-date-month">Jul</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/why-should-you-eat-fruits-more-often">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_50x50.jpg?v=1625147388"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.4981273408239701" data-sizes="auto"
+                                            alt="Why Should You Eat Fruits More Often?"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_180x.jpg?v=1625147388 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_360x.jpg?v=1625147388 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_540x.jpg?v=1625147388 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_720x.jpg?v=1625147388 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_900x.jpg?v=1625147388 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_1080x.jpg?v=1625147388 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_1296x.jpg?v=1625147388 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_1512x.jpg?v=1625147388 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_1728x.jpg?v=1625147388 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_2048x.jpg?v=1625147388 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_180x.jpg?v=1625147388 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_360x.jpg?v=1625147388 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_540x.jpg?v=1625147388 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_720x.jpg?v=1625147388 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_900x.jpg?v=1625147388 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_1080x.jpg?v=1625147388 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_1296x.jpg?v=1625147388 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_1512x.jpg?v=1625147388 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_1728x.jpg?v=1625147388 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_2048x.jpg?v=1625147388 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a href="/blogs/grow-with-kimaye/why-should-you-eat-fruits-more-often"
+                                rel="bookmark">Why Should You Eat Fruits More Often?</a></h3>
+                        <div class="entry-content">
+                            <p>David Thoreau once stated, “Live in each season as it passes: breathe the air, drink the
+                                drink, taste the seasonal fruit.” Rings true as, the more we tend to treat our cravings
+                                with junk and...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/why-should-you-eat-fruits-more-often">Read more</a>
+                            </p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/why-should-you-eat-fruits-more-often"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                    <article id="post-393497739419"
+                        class="blog-design-default-alt post-393497739419 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">12</span><span class="post-date-month">Feb</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/grapes-how-they-reached-india-types-and-health-benefits">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_50x50.png?v=1614341965"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.8392857142857142" data-sizes="auto"
+                                            alt="Grapes of India"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_180x.png?v=1614341965 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_360x.png?v=1614341965 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_540x.png?v=1614341965 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_720x.png?v=1614341965 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_900x.png?v=1614341965 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_1080x.png?v=1614341965 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_1296x.png?v=1614341965 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_1512x.png?v=1614341965 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_1728x.png?v=1614341965 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_2048x.png?v=1614341965 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_180x.png?v=1614341965 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_360x.png?v=1614341965 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_540x.png?v=1614341965 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_720x.png?v=1614341965 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_900x.png?v=1614341965 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_1080x.png?v=1614341965 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_1296x.png?v=1614341965 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_1512x.png?v=1614341965 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_1728x.png?v=1614341965 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_2048x.png?v=1614341965 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a
+                                href="/blogs/grow-with-kimaye/grapes-how-they-reached-india-types-and-health-benefits"
+                                rel="bookmark">Grapes: How they reached India, types and health benefits</a></h3>
+                        <div class="entry-content">
+                            <p>Grapes are one of the most diverse and devoured fruits in India. Known for its sweet
+                                flavours and nutrients, grapes are hard to ignore. They come in various types and are
+                                carefully nurtured into fresh...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/grapes-how-they-reached-india-types-and-health-benefits">Read
+                                    more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/grapes-how-they-reached-india-types-and-health-benefits"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <article id="post-392607105179"
+                        class="blog-design-default-alt post-392607105179 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">10</span><span class="post-date-month">Nov</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/make-immunity-your-best-friend">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_50x50.jpg?v=1614342193"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.8333333333333333" data-sizes="auto"
+                                            alt="Make Immunity your Best Friend"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_180x.jpg?v=1614342193 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_360x.jpg?v=1614342193 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_540x.jpg?v=1614342193 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_720x.jpg?v=1614342193 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_900x.jpg?v=1614342193 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_1080x.jpg?v=1614342193 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_1296x.jpg?v=1614342193 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_1512x.jpg?v=1614342193 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_1728x.jpg?v=1614342193 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_2048x.jpg?v=1614342193 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_180x.jpg?v=1614342193 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_360x.jpg?v=1614342193 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_540x.jpg?v=1614342193 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_720x.jpg?v=1614342193 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_900x.jpg?v=1614342193 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_1080x.jpg?v=1614342193 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_1296x.jpg?v=1614342193 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_1512x.jpg?v=1614342193 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_1728x.jpg?v=1614342193 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/immune_system_1728x-min_2048x.jpg?v=1614342193 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a href="/blogs/grow-with-kimaye/make-immunity-your-best-friend"
+                                rel="bookmark">Make Immunity your Best Friend</a></h3>
+                        <div class="entry-content">
+                            <p>Immunity in the New Normal The pandemic’s biggest mystery is our immune system. But, do
+                                we really understand how it functions? In simple terms, it’s your body’s armour against
+                                illnesses. The immune system also aids...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/make-immunity-your-best-friend">Read more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/make-immunity-your-best-friend"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <div class="clearfix clearfix visible-sm-block"></div>
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                    <article id="post-392766226587"
+                        class="blog-design-default-alt post-392766226587 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">05</span><span class="post-date-month">Oct</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/nourish-yourself-with-these-fruitful-nutrients">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_50x50.jpg?v=1614342435"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.8333333333333333" data-sizes="auto"
+                                            alt="Nourish yourself with these 'fruitful' nutrients"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_180x.jpg?v=1614342435 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_360x.jpg?v=1614342435 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_540x.jpg?v=1614342435 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_720x.jpg?v=1614342435 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_900x.jpg?v=1614342435 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_1080x.jpg?v=1614342435 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_1296x.jpg?v=1614342435 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_1512x.jpg?v=1614342435 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_1728x.jpg?v=1614342435 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_2048x.jpg?v=1614342435 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_180x.jpg?v=1614342435 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_360x.jpg?v=1614342435 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_540x.jpg?v=1614342435 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_720x.jpg?v=1614342435 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_900x.jpg?v=1614342435 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_1080x.jpg?v=1614342435 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_1296x.jpg?v=1614342435 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_1512x.jpg?v=1614342435 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_1728x.jpg?v=1614342435 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-min_2048x.jpg?v=1614342435 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a
+                                href="/blogs/grow-with-kimaye/nourish-yourself-with-these-fruitful-nutrients"
+                                rel="bookmark">Nourish yourself with these 'fruitful' nutrients</a></h3>
+                        <div class="entry-content">
+                            <p>October 5, 2020 (IANSlife)&nbsp;“Yatha Annam Tatha Mannam,” Prime Minister Narendra Modi
+                                recalled the maxim during his ‘Mann ki Baat session’ a few days back, which signifies
+                                that’ mental and intellectual development is directly related to...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/nourish-yourself-with-these-fruitful-nutrients">Read
+                                    more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/nourish-yourself-with-these-fruitful-nutrients"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <article id="post-392766259355"
+                        class="blog-design-default-alt post-392766259355 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">28</span><span class="post-date-month">Sep</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/healthy-at-heart">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_50x50.jpg?v=1614342271"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.8333333333333333" data-sizes="auto"
+                                            alt="Healthy at Heart"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_180x.jpg?v=1614342271 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_360x.jpg?v=1614342271 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_540x.jpg?v=1614342271 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_720x.jpg?v=1614342271 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_900x.jpg?v=1614342271 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_1080x.jpg?v=1614342271 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_1296x.jpg?v=1614342271 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_1512x.jpg?v=1614342271 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_1728x.jpg?v=1614342271 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_2048x.jpg?v=1614342271 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_180x.jpg?v=1614342271 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_360x.jpg?v=1614342271 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_540x.jpg?v=1614342271 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_720x.jpg?v=1614342271 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_900x.jpg?v=1614342271 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_1080x.jpg?v=1614342271 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_1296x.jpg?v=1614342271 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_1512x.jpg?v=1614342271 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_1728x.jpg?v=1614342271 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/healthy_heart-min_2048x.jpg?v=1614342271 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a href="/blogs/grow-with-kimaye/healthy-at-heart"
+                                rel="bookmark">Healthy at Heart</a></h3>
+                        <div class="entry-content">
+                            <p>September 28, 2020 (IANSlife)&nbsp;This World Heart Day, let’s have a light-hearted
+                                conversation about the importance of having a healthy heart and how one should take care
+                                of it.&nbsp; Being aware of cardiovascular diseases and measures...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/healthy-at-heart">Read more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/healthy-at-heart"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                    <article id="post-391530872987"
+                        class="blog-design-default-alt post-391530872987 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">14</span><span class="post-date-month">Aug</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/craving-for-something-delicious-during-the-lockdown-we-got-you">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_50x50.jpg?v=1614342502"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.8333333333333333" data-sizes="auto"
+                                            alt="Craving for Something Delicious During the Lockdown? We Got You!"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_180x.jpg?v=1614342502 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_360x.jpg?v=1614342502 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_540x.jpg?v=1614342502 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_720x.jpg?v=1614342502 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_900x.jpg?v=1614342502 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_1080x.jpg?v=1614342502 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_1296x.jpg?v=1614342502 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_1512x.jpg?v=1614342502 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_1728x.jpg?v=1614342502 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_2048x.jpg?v=1614342502 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_180x.jpg?v=1614342502 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_360x.jpg?v=1614342502 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_540x.jpg?v=1614342502 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_720x.jpg?v=1614342502 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_900x.jpg?v=1614342502 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_1080x.jpg?v=1614342502 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_1296x.jpg?v=1614342502 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_1512x.jpg?v=1614342502 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_1728x.jpg?v=1614342502 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/craving_blog-min_2048x.jpg?v=1614342502 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a
+                                href="/blogs/grow-with-kimaye/craving-for-something-delicious-during-the-lockdown-we-got-you"
+                                rel="bookmark">Craving for Something Delicious During the Lockdown? We Got You!</a></h3>
+                        <div class="entry-content">
+                            <p>We know that you’ve been spending your time working from home and being committed to your
+                                fitness goals. But, what about those cravings that sneak up on you once in a while?
+                                Well, we are...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/craving-for-something-delicious-during-the-lockdown-we-got-you">Read
+                                    more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/craving-for-something-delicious-during-the-lockdown-we-got-you"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <div class="clearfix clearfix visible-sm-block"></div>
+                    <article id="post-392766193819"
+                        class="blog-design-default-alt post-392766193819 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">03</span><span class="post-date-month">Aug</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/a-fruitful-monsoon-diet">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_50x50.jpg?v=1614342545"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.8333333333333333" data-sizes="auto"
+                                            alt="A fruitful monsoon diet"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_180x.jpg?v=1614342545 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_360x.jpg?v=1614342545 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_540x.jpg?v=1614342545 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_720x.jpg?v=1614342545 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_900x.jpg?v=1614342545 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_1080x.jpg?v=1614342545 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_1296x.jpg?v=1614342545 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_1512x.jpg?v=1614342545 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_1728x.jpg?v=1614342545 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_2048x.jpg?v=1614342545 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_180x.jpg?v=1614342545 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_360x.jpg?v=1614342545 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_540x.jpg?v=1614342545 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_720x.jpg?v=1614342545 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_900x.jpg?v=1614342545 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_1080x.jpg?v=1614342545 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_1296x.jpg?v=1614342545 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_1512x.jpg?v=1614342545 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_1728x.jpg?v=1614342545 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/pomegranate-1-min_2048x.jpg?v=1614342545 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a href="/blogs/grow-with-kimaye/a-fruitful-monsoon-diet"
+                                rel="bookmark">A fruitful monsoon diet</a></h3>
+                        <div class="entry-content">
+                            <p>August 3, 2020 (IANSlife)&nbsp;Monsoon demands some extra effort to stay fit and healthy.
+                                Since our immunity takes a dip during monsoons, making us susceptible to all kinds of
+                                infections. Especially amidst the Coronavirus pandemic, it’s...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/a-fruitful-monsoon-diet">Read more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/a-fruitful-monsoon-diet"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                    <article id="post-392766161051"
+                        class="blog-design-default-alt post-392766161051 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">08</span><span class="post-date-month">Jun</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/do-fruits-have-a-time-table">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_50x50.jpg?v=1614598062"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.328125" data-sizes="auto"
+                                            alt="Do fruits have a time table"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_180x.jpg?v=1614598062 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_360x.jpg?v=1614598062 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_540x.jpg?v=1614598062 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_720x.jpg?v=1614598062 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_900x.jpg?v=1614598062 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_1080x.jpg?v=1614598062 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_1296x.jpg?v=1614598062 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_1512x.jpg?v=1614598062 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_1728x.jpg?v=1614598062 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_2048x.jpg?v=1614598062 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_180x.jpg?v=1614598062 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_360x.jpg?v=1614598062 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_540x.jpg?v=1614598062 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_720x.jpg?v=1614598062 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_900x.jpg?v=1614598062 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_1080x.jpg?v=1614598062 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_1296x.jpg?v=1614598062 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_1512x.jpg?v=1614598062 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_1728x.jpg?v=1614598062 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/consume_fruits-min_2048x.jpg?v=1614598062 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a href="/blogs/grow-with-kimaye/do-fruits-have-a-time-table"
+                                rel="bookmark">Do fruits have a time table</a></h3>
+                        <div class="entry-content">
+                            <p>The right time to consume fruits Fruits are known to be an essential source of vitamins
+                                and minerals, and an excellent way to improve your overall health. Not just that, if you
+                                keep on consuming...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/do-fruits-have-a-time-table">Read more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/do-fruits-have-a-time-table"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <article id="post-392766128283"
+                        class="blog-design-default-alt post-392766128283 post type-post col-xs-12 col-sm-4 col-md-6  has-post-thumbnail blog-post-loop">
+                        <div class="meta-post-categories hide"><a href="/blogs/grow-with-kimaye" rel="category tag">Grow
+                                with Kimaye</a></div>
+                        <div class="entry-meta hide">
+                            <ul class="entry-meta-list">
+                                <li class="meta-author">By <span class="name_author">Kimaye Fruits</span></li>
+                            </ul>
+                        </div><!-- .entry-meta -->
+                        <header class="entry-header">
+                            <figure class="entry-thumbnail col-">
+                                <div class="post-date">
+                                    <span class="post-date-day">17</span><span class="post-date-month">May</span>
+                                </div>
+                                <div class="post-img-wrapp product-element-top"><a class="db pr"
+                                        href="/blogs/grow-with-kimaye/meet-your-health-goals-during-the-lockdown">
+                                        <img class="article__grid-image w__100 lazyautosizes lazyloaded"
+                                            src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_50x50.jpg?v=1614598096"
+                                            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                                            data-aspectratio="1.8333333333333333" data-sizes="auto"
+                                            alt="Meet your health goals during the lockdown"
+                                            data-srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_180x.jpg?v=1614598096 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_360x.jpg?v=1614598096 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_540x.jpg?v=1614598096 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_720x.jpg?v=1614598096 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_900x.jpg?v=1614598096 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_1080x.jpg?v=1614598096 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_1296x.jpg?v=1614598096 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_1512x.jpg?v=1614598096 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_1728x.jpg?v=1614598096 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_2048x.jpg?v=1614598096 2048w"
+                                            sizes="407px"
+                                            srcset="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_180x.jpg?v=1614598096 180w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_360x.jpg?v=1614598096 360w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_540x.jpg?v=1614598096 540w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_720x.jpg?v=1614598096 720w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_900x.jpg?v=1614598096 900w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_1080x.jpg?v=1614598096 1080w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_1296x.jpg?v=1614598096 1296w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_1512x.jpg?v=1614598096 1512w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_1728x.jpg?v=1614598096 1728w, //cdn.shopify.com/s/files/1/0449/5225/6667/articles/working_out_at_home-min_2048x.jpg?v=1614598096 2048w">
+                                        <div class="jas-wrap-lazy"></div>
+                                    </a></div>
+                            </figure>
+                        </header><!-- .entry-header -->
+                        <h3 class="entry-title"><a
+                                href="/blogs/grow-with-kimaye/meet-your-health-goals-during-the-lockdown"
+                                rel="bookmark">Meet your health goals during the lockdown</a></h3>
+                        <div class="entry-content">
+                            <p>May 17, 2020 (IANSlife)&nbsp;"Work from Home" during quarantine has changed our
+                                lifestyles;&nbsp;keeping a check on nutrition can be tough when our home is our
+                                office.&nbsp;&nbsp; Unlike at the office, here we have plenty of packed...
+                            </p>
+                            <p class="read-more-section"><a class="btn btn-style-link btn-read-more more-link"
+                                    href="/blogs/grow-with-kimaye/meet-your-health-goals-during-the-lockdown">Read
+                                    more</a></p>
+                        </div>
+                        <div class="liner-continer">
+                            <span class="left-line"></span>
+                            <ul class="social-icons text-center social-share icons-design-circle icons-size-small">
+                                <li class="social-email"><a
+                                        href="mailto:?subject=Check this https://kimaye.com/blogs/grow-with-kimaye/meet-your-health-goals-during-the-lockdown"
+                                        target="_blank" class=""><i class="fa fa-envelope"></i>Email</a></li>
+                            </ul>
+
+
+                            <span class="right-line"></span>
+                        </div>
+                    </article>
+                    <div class="clearfix clearfix visible-sm-block"></div>
+                    <div class="clearfix visible-md-block visible-lg-block"></div>
+                    <div class="clear"></div>
+                    <div class="basel-pagination blog_gl_pagination "><span class="current">1</span><a
+                            href="/blogs/grow-with-kimaye?page=2" class="inactive">2</a>
+                    </div>
+                </div><!-- .site-content -->
+                <aside class="sidebar-container col-sm-3 sidebar-right" role="complementary">
+                    <div class="sidebar-inner">
+                        <div id="shopify-section-gl_section_sidebar_blog" class="shopify-section widget-area">
+                            <div id="search-1499690601971" class="sidebar-widget widget_search">
+                                <h5 class="widget-title">Search</h5>
+                                <form role="search" method="get" id="searchform-1499690601971"
+                                    class="searchform gl_search_post" action="/search">
+                                    <div>
+                                        <input type="hidden" name="type" value="article">
+                                        <label class="screen-reader-text" for="q"></label>
+                                        <input type="text" placeholder="Search for posts" name="q" id="q"
+                                            autocomplete="off">
+                                        <button type="submit" id="searchsubmit">Search</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="categories-1499701817594" class="sidebar-widget widget_categories">
+                                <h5 class="widget-title">Categories</h5>
+                                <ul>
+                                    <li class="cat-item">Pick a link list to show here in your under <strong>Blog
+                                            sidebar</strong> &gt; <strong>Quick links link list</strong>.</li>
+                                </ul>
+                            </div>
+                            <style>
+                                .rpwe-block ul {
+                                    list-style: none !important;
+                                    margin-left: 0 !important;
+                                    padding-left: 0 !important;
+                                }
+
+                                .rpwe-block li {
+                                    border-bottom: 1px solid #eee;
+                                    margin-bottom: 10px;
+                                    padding-bottom: 10px;
+                                    list-style-type: none;
+                                }
+
+                                .rpwe-block a {
+                                    display: inline !important;
+                                    text-decoration: none;
+                                }
+
+                                .rpwe-block h3 {
+                                    background: none !important;
+                                    clear: none;
+                                    margin-bottom: 0 !important;
+                                    margin-top: 0 !important;
+                                    font-weight: 400;
+                                    font-size: 12px !important;
+                                    line-height: 1.5em;
+                                }
+
+                                .rpwe-thumb {
+                                    border: 1px solid #EEE !important;
+                                    box-shadow: none !important;
+                                    margin: 2px 10px 2px 0;
+                                    padding: 3px !important;
+                                }
+
+                                .rpwe-summary {
+                                    font-size: 12px;
+                                }
+
+                                .rpwe-time {
+                                    color: #bbb;
+                                    font-size: 11px;
+                                }
+
+                                .rpwe-comment {
+                                    color: #bbb;
+                                    font-size: 11px;
+                                    padding-left: 5px;
+                                }
+
+                                .rpwe-alignleft {
+                                    display: inline;
+                                    float: left;
+                                }
+
+                                .rpwe-alignright {
+                                    display: inline;
+                                    float: right;
+                                }
+
+                                .rpwe-aligncenter {
+                                    display: block;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+
+                                .rpwe-clearfix:before,
+                                .rpwe-clearfix:after {
+                                    content: "";
+                                    display: table !important;
+                                }
+
+                                .rpwe-clearfix:after {
+                                    clear: both;
+                                }
+
+                                .rpwe-clearfix {
+                                    zoom: 1;
+                                }
+                            </style>
+                            <div id="rpwe_widget-1499678439559"
+                                class="sidebar-widget rpwe_widget recent-posts-extended">
+                                <h5 class="widget-title">Recent Post</h5>
+                                <div class="rpwe-block">
+                                    <ul class="rpwe-ul">
+                                        <li class="rpwe-li rpwe-clearfix"><a class="rpwe-img"
+                                                href="/blogs/grow-with-kimaye/top-fruit-safety-tips-you-should-be-swearing-by-every-time-you-consume-them"
+                                                rel="bookmark">
+                                                <img class="rpwe-alignleft rpwe-thumb" src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_334275008-2-opt2-1900px_70x_crop_center.progressive.jpg?v=1627119119
+    " alt="article.image.alt">
+                                            </a>
+                                            <h3 class="rpwe-title"><a
+                                                    href="/blogs/grow-with-kimaye/top-fruit-safety-tips-you-should-be-swearing-by-every-time-you-consume-them"
+                                                    title="Permalink to Venenatis veulum peus" rel="bookmark">Top Fruit
+                                                    Safety Tips You Should Be Swearing By Every Time You Consume Them
+                                                    .</a></h3>
+                                            <time class="rpwe-time published" datetime="2021-07-2415:02:03+0530">Jul 24,
+                                                2021</time>
+                                        </li>
+                                        <li class="rpwe-li rpwe-clearfix"><a class="rpwe-img"
+                                                href="/blogs/grow-with-kimaye/fruits-rich-in-vitamin-c-that-you-should-be-eating-everyday"
+                                                rel="bookmark">
+                                                <img class="rpwe-alignleft rpwe-thumb" src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_201343750_copy__66kb-1000px_70x_crop_center.progressive.jpg?v=1626676701
+    " alt="article.image.alt">
+                                            </a>
+                                            <h3 class="rpwe-title"><a
+                                                    href="/blogs/grow-with-kimaye/fruits-rich-in-vitamin-c-that-you-should-be-eating-everyday"
+                                                    title="Permalink to Venenatis veulum peus" rel="bookmark">Fruits
+                                                    Rich In Vitamin C That You Should Be Eating Everyday</a></h3>
+                                            <time class="rpwe-time published" datetime="2021-07-1912:08:20+0530">Jul 19,
+                                                2021</time>
+                                        </li>
+                                        <li class="rpwe-li rpwe-clearfix"><a class="rpwe-img"
+                                                href="/blogs/grow-with-kimaye/how-to-remove-and-clean-harmful-pesticides-from-fruits"
+                                                rel="bookmark">
+                                                <img class="rpwe-alignleft rpwe-thumb" src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/AdobeStock_77286816-min__1625567830_114.143.85.97_70x_crop_center.progressive.jpg?v=1625638895
+    " alt="article.image.alt">
+                                            </a>
+                                            <h3 class="rpwe-title"><a
+                                                    href="/blogs/grow-with-kimaye/how-to-remove-and-clean-harmful-pesticides-from-fruits"
+                                                    title="Permalink to Venenatis veulum peus" rel="bookmark">How To
+                                                    Remove And Clean Harmful Pesticides From Fruits</a></h3>
+                                            <time class="rpwe-time published" datetime="2021-07-0711:51:41+0530">Jul 07,
+                                                2021</time>
+                                        </li>
+                                        <li class="rpwe-li rpwe-clearfix"><a class="rpwe-img"
+                                                href="/blogs/grow-with-kimaye/why-should-you-eat-fruits-more-often"
+                                                rel="bookmark">
+                                                <img class="rpwe-alignleft rpwe-thumb" src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/Blog_-_Benefits_of_fruits_70x_crop_center.progressive.jpg?v=1625147388
+    " alt="article.image.alt">
+                                            </a>
+                                            <h3 class="rpwe-title"><a
+                                                    href="/blogs/grow-with-kimaye/why-should-you-eat-fruits-more-often"
+                                                    title="Permalink to Venenatis veulum peus" rel="bookmark">Why Should
+                                                    You Eat Fruits More Often?</a></h3>
+                                            <time class="rpwe-time published" datetime="2021-07-0119:19:47+0530">Jul 01,
+                                                2021</time>
+                                        </li>
+                                        <li class="rpwe-li rpwe-clearfix"><a class="rpwe-img"
+                                                href="/blogs/grow-with-kimaye/grapes-how-they-reached-india-types-and-health-benefits"
+                                                rel="bookmark">
+                                                <img class="rpwe-alignleft rpwe-thumb" src="//cdn.shopify.com/s/files/1/0449/5225/6667/articles/Untitled_design_51-min_70x_crop_center.png?v=1614341965
+    " alt="article.image.alt">
+                                            </a>
+                                            <h3 class="rpwe-title"><a
+                                                    href="/blogs/grow-with-kimaye/grapes-how-they-reached-india-types-and-health-benefits"
+                                                    title="Permalink to Venenatis veulum peus" rel="bookmark">Grapes:
+                                                    How they reached India, types and health benefits</a></h3>
+                                            <time class="rpwe-time published" datetime="2021-02-1219:00:49+0530">Feb 12,
+                                                2021</time>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- .widget-area -->
+                    </div><!-- .sidebar-inner -->
+                </aside><!-- .sidebar-container -->
+            </div>
+        </div>
+    </div>
+    <style>
+        .blog-post-loop .entry-title {
+            min-height: auto;
+        }
+
+        .blog-post-loop .post-img-wrapp {
+            background-color: transparent !important;
+        }
+
+        .pt30 {
+            padding: 30px 0px;
+        }
+
+        #blog-new .banner {
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/grow_by_kimaye.jpg?v=1609401696);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center right;
+            height: 58vh;
+            position: relative;
+        }
+
+        @media screen and (max-width: 767px) {
+            #blog-new .banner {
+                background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Blogs_Banner.jpg?v=1609757872);
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+
+        #blog-new .banner .banner_content .heading .red_bg {
+
+            background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/red_patch_traceabil.png?v=1600169390);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 15px;
+        }
+
+        .pt10-blog {
+            padding-top: 0px !important;
+        }
+
+        .page-title {
+            padding-top: 20px !important;
+        }
+
+        #blog-new .heading {
+            font-size: 46px;
+            line-height: 1.4;
+            margin-bottom: 30px;
+            font-family: Bitterbrush;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+
+            #blog-new .banner {
+                background-size: 100%;
+                height: 33vh;
+            }
+
+        }
+
+
+        @media screen and (max-width: 767px) {
+            .gl_mb_40 {
+                margin-bottom: 10px !important;
+            }
+
+            #blog-new.contact_info_sec {
+
+                padding-bottom: 0px;
+            }
+
+            #contact_us .text {
+                padding: 20px;
+            }
+
+            #blog-new .contact_form_sec {
+                padding: 20px;
+            }
+
+
+            #blog-new .banner {
+                background-size: 100%;
+                height: 53vh;
+            }
+
+            #blog-new .banner .banner_content .heading .red_bg {
+                padding: 7px;
+            }
+
+            #blog-new .banner .banner_content .heading {
+                font-size: 23px;
+            }
+
+            #blog-new .banner .banner_content {
+                align-items: baseline;
+            }
+
+
+        }
+    </style>
+
+
+
+    <div class="globoRecommendationsBottom"></div>
+    <script data-instant-track="" type="text/javascript">globoPersonalizedRecommendations.init();</script>
+
+
+</body>
+
+</html>
