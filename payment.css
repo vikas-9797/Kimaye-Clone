@@ -24,7 +24,7 @@ background-color: white
 {
 float: right;
 padding: 5px;
-    background-color: white
+background-color: white
 }
 #Date>input
 {
@@ -40,7 +40,7 @@ background-color: white
 }
 #Pay > h3
 {
-    color: black;
+ color: black;
 }
 #payButton
 {
@@ -63,7 +63,6 @@ color: black
 
 .last {
 width: 100%;
-
 text-align: center;
 background-color:green;
 color: white;
@@ -175,3 +174,43 @@ font-weight: 700;
 }
 
 
+@media screen and (min-width: 378px) and (max-width: 800px) {
+    #vikas_box{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* justify-content: space-around; */
+        }
+
+
+#Pay{
+border: 2px solid silver;
+width: auto;
+height: auto;
+margin: auto;
+border-radius: 5px;
+
+}
+}
+@media screen and (min-width: 0px) and (max-width: 377px) {
+    
+    #vikas_box{
+        height: auto;
+        width: auto;
+        display: grid;
+        margin-left: 10%;
+        grid-template-columns: repeat(1,1fr);
+        /* justify-content: space-around; */
+        }
+
+
+#Pay{
+border: 2px solid silver;
+width: auto;
+height: auto;
+margin: auto;
+border-radius: 5px;
+
+}
+} 
