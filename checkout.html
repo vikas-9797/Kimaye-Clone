@@ -76,8 +76,13 @@
                 <input type="checkbox" />
                 <label for="checkbox">Save this information for next time</label>
                 <br><br><br>
-                <input type="submit" value="continue to shopping" />
+                <!-- <input type="submit" id="button" value="" /> -->
+              
+                
           </form>
+          <div>
+            <button>continue to shopping</button>
+          </div>
 
           <hr />
           <p>All rights reserved .</p>
@@ -112,7 +117,14 @@
         </div>
 
     </div>
+   
 </body>
 </html>
 
 <script src="./checkout.js"></script>
+
+<script>
+  document.querySelector("button").addEventListener("click",()=>{
+      window.location.href="payment.html"
+  })
+</script>

@@ -1,14 +1,16 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 .vikas_cart_head{
+    padding: 75px;
     width: 100%;
     height: 100px;
     background-color: rgb(67,113,17);
     text-align: center;
+    color: white;
 }
 
 table{
