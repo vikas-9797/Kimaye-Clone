@@ -5,6 +5,7 @@ document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("footer").innerHTML = footer();
 
 var bonusData = [
+
     {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/47dfb7d1-d8d3-4c96-bda9-7dc85dfdec51_540x.png?v=1613364164",name:"Pomegranate Seeds (Axils Cup)125g",price:"55"},
     {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/24d0f9c9-fe83-40a3-84ab-300e73e4ff8d_540x.png?v=1611811511",name:"Coconut Chunks Cup (100g)",price:"130"},
     {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/0fce7fd6-f30e-45df-8c52-234acbd62023_540x.png?v=1611811509",name:"Grated Coconut Punnet",price:"51"},

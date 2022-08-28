@@ -5,10 +5,10 @@ document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("footer").innerHTML = footer();
 
 var bonusData = [
-    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Cherry--_-blueberry_360x.jpg?v=1654851019",name:"Northvest Cherries-Blueberry Combo",price:"₹654",},
-    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Plum_BB_360x.jpg?v=1621068661",name:"Kimaye Plum-Blueberries Combo",price:"₹356",},
-    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Wholesome-combo_360x.jpg?v=1618497683",name:"Kimaye Wholesome Combo",price:"₹733"},
-    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/KiwiBlueberry_360x.png?v=1617983685",name:"Kimaye Kivi-Blueberries Combo",price:"₹412"},
+    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Cherry--_-blueberry_360x.jpg?v=1654851019",name:"Northvest Cherries-Blueberry Combo",price:"654",},
+    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Plum_BB_360x.jpg?v=1621068661",name:"Kimaye Plum-Blueberries Combo",price:"356",},
+    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Wholesome-combo_360x.jpg?v=1618497683",name:"Kimaye Wholesome Combo",price:"733"},
+    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/KiwiBlueberry_360x.png?v=1617983685",name:"Kimaye Kivi-Blueberries Combo",price:"412"},
     
 ]
 
