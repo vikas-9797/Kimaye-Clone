@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .banner {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Story-min.jpg?v=1614599075);
+      position: relative;
+    }
+
+    .banner {
+      padding: 15% 0;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .banner .image {
+      position: absolute;
+      right: 0;
+      top: 10%;
+    }
+
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .banner_content {
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+    .banner .banner_content .heading {
+      font-size: 60px;
+      line-height: 1.1;
+      margin-bottom: 30px;
+      font-family: Bitterbrush;
+      color: #fff;
+    }
+
+    .banner .banner_content .heading .red_bg {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      padding: 20px 15px;
+    }
+
+    .banner .red_bg {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/red-patch.png?v=1600154657);
+    }
+
+    .banner .banner_content .banner_subtext {
+      font-size: 24px;
+      padding-left: 15px;
+      color: #fff;
+    }
+
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .trust_section {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658);
+      background-size: cover;
+      background-position: center;
+      padding: 50px 0;
+      position: relative;
+    }
+
+    .trust_section.container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .div_display_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .width_40 {
+      width: 40%;
+    }
+
+    .lazyloaded {
+      opacity: 1;
+    }
+
+    .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    a,
+    abbr,
+    acronym,
+    address,
+    applet,
+    article,
+    aside,
+    audio,
+    b,
+    big,
+    blockquote,
+    body,
+    canvas,
+    caption,
+    center,
+    cite,
+    code,
+    dd,
+    del,
+    details,
+    dfn,
+    div,
+    dl,
+    dt,
+    em,
+    embed,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    html,
+    i,
+    iframe,
+    img,
+    ins,
+    kbd,
+    label,
+    legend,
+    li,
+    mark,
+    menu,
+    nav,
+    object,
+    ol,
+    output,
+    p,
+    pre,
+    q,
+    ruby,
+    s,
+    samp,
+    section,
+    small,
+    span,
+    strike,
+    strong,
+    sub,
+    summary,
+    sup,
+    table,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    time,
+    tr,
+    tt,
+    u,
+    ul,
+    var,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    img {
+      border: 0;
+    }
+
+    .width_60 {
+      width: 60%;
+    }
+
+    .div_display_flex,
+    #contact_us .div_display_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #CD171F;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px #98cb4c;
+      border-radius: 10px;
+    }
+
+    ::selection {
+      color: #cd171f;
+      background: #98CB4C;
+    }
+
+    .heading_section h2 {
+      color: #222;
+      font-family: Bitterbrush;
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 15px 0;
+      line-height: 1.2;
+    }
+
+    .para_text_section {
+      font-family: PT Sans, sans-serif;
+      font-size: 25px;
+      margin: 0;
+      line-height: 1.3;
+      color: #222;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .small_para_text_section {
+      font-family: PT Sans, sans-serif;
+      font-size: 22px;
+      margin: 0;
+      padding-top: 40px;
+      color: #222;
+      font-weight: lighter;
+    }
+
+    .small_para_text_section .red_text {
+      color: #cd171f;
+      font-family: PT Sans, sans-serif;
+      font-weight: 600;
+    }
+
+    .trust_section .fruit_box_text .brand_section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 30px;
+    }
+
+    .safest_fruits_section {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.jpg?v=1600154659);
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .safest_fruits_section.container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .safest_fruits_section .safest_fruits_text {
+      padding: 0 60px;
+    }
+
+    .safest_fruits_para_text {
+      font-family: PT Sans, sans-serif;
+      font-size: 18px;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    .safest_fruits_section .safest_fruits_text .red_text {
+      color: #cd171f;
+      font-family: PT Sans, sans-serif;
+    }
+
+    .success_story_section {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg_01.jpg?v=1600154658);
+      background-size: cover;
+      background-position: center;
+      padding: 49px 0;
+      position: relative;
+    }
+
+    .success_story_section .grass {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .success_story_section.container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .success_story_section .story_heading {
+      text-align: center;
+    }
+
+    .success_story_section .story_heading .success_heading {
+      display: inline-block;
+    }
+
+    .success_story_section .story_heading .success_heading .green {
+      margin: 0 -60px -12px auto;
+    }
+
+    .heading_section h2 {
+      color: #222;
+      font-family: Bitterbrush;
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 15px 0;
+      line-height: 1.2;
+    }
+
+    .para_text_section {
+      font-family: PT Sans, sans-serif;
+      font-size: 25px;
+      margin: 0;
+      line-height: 1.3;
+      color: #222;
+    }
+
+    .success_story_section .story_mrgn_top {
+      margin-top: 80px;
+    }
+
+    .div_display_flex,
+    #contact_us .div_display_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .safest_fruits_para_text {
+      font-family: PT Sans, sans-serif;
+      font-size: 18px;
+      color: #222;
+      line-height: 1.4;
+    }
+
+    .success_story_section .right-arrow {
+      margin: 0 0 0 auto;
+    }
+
+    .success_story_section {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg_01.jpg?v=1600154658);
+      background-size: cover;
+      background-position: center;
+      padding: 49px 0;
+      position: relative;
+    }
+
+    .story-img {
+      position: relative;
+    }
+
+    .success_story_section .row_reverse {
+      flex-direction: row-reverse;
+    }
+
+    .success_story_section .pdng_left_right {
+      padding: 0 60px;
+    }
+
+    .success_story_section .story_mrgn_top {
+      margin-top: 80px;
+    }
+
+    .div_display_flex,
+    #contact_us .div_display_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .story-img .story_4 {
+      bottom: 10px;
+      right: 35%;
+    }
+
+    .shot_on_location_txt {
+      bottom: 15px;
+      font-size: 15px;
+      position: absolute;
+      right: 15px;
+      color: #fff;
+      margin: 0;
+      text-shadow: 1px 1px #4c4c4c;
+      font-weight: 800;
+    }
+
+    .founder_section {
+      background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/green_bg.png?v=1600154659);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 49px;
+      padding-bottom: 50px;
+      position: relative;
+    }
+
+    .founder_section .founder_slider .img-area {
+      position: absolute;
+      top: -60px;
+    }
+
+    .founder_section .founder_carousel .owl-stage-outer .owl-item.center .item .founder_link {
+      color: #437111;
+      cursor: pointer;
+    }
+
+    .founder_section .founder_slider .founder_slider_inside .founder_link {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a {
+      color: #202020;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    .founder_slider_inside .founder_link .farm {
+      font-family: PT Sans, sans-serif;
+      font-size: 22px;
+    }
+
+    .founder_section .founder_slider .founder_slider_inside .farm_para {
+      font-family: PT Sans, sans-serif;
+      font-weight: 100;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #000;
+    }
+
+    .founder_section .founder_slider .name_date_section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .founder_section .founder_slider .name_date_section .name_section {
+      font-family: PT Sans, sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .founder_section .founder_slider .name_date_section .date_section {
+      font-family: PT Sans, sans-serif;
+      font-weight: lighter;
+      font-size: 16px;
+    }
+
+    .founder_section .founder_slider {
+      background-color: #fff;
+      border-radius: 18px;
+      margin: 0 50px;
+      padding: 60px 40px 0;
+      position: relative;
+      max-width: 50vw;
+    }
+
+    .founder_section .founder_slider .name_date_section .date_section {
+      font-family: PT Sans, sans-serif;
+      font-weight: lighter;
+      font-size: 16px;
+    }
+
+    .founder_section .founder_slider .img-area {
+      position: absolute;
+      top: -60px;
+    }
+
+    .founder_slider_inside .founder_link {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a {
+      color: #202020;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+    }
+
+    .founder_section .founder_slider .founder_slider_inside .farm_para {
+      font-family: PT Sans, sans-serif;
+      font-weight: 100;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #000;
+    }
+
+    .founder_section .founder_slider .name_date_section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .founder_section .founder_slider .name_date_section .name_section {
+      font-family: PT Sans, sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .founder_section .founder_slider .name_date_section .date_section {
+      font-family: PT Sans, sans-serif;
+      font-weight: lighter;
+      font-size: 16px;
+    }
+
+    .owl-carousel.owl-drag .owl-item {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -ms-touch-action: pan-y;
+      touch-action: pan-y;
+    }
+
+    .owl-carousel .owl-item {
+      position: relative;
+      min-height: 1px;
+      float: left;
+      /* -webkit-backface-visibility: hidden; */
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+    }
+
+    .owl-carousel {
+      display: none;
+      width: 100%;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+      z-index: 1;
+    }
+    h3 {
+    font-size: 22px;
+}
+.title, h1, h2, h3, h4, h5, h6 {
+    font-family: Karla, Arial, Helvetica, sans-serif;
+    color: #1b1919;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+  </style>
+</head>
+
+<body>
+  <section class="banner">
+    <div class="image">
+      <!--      <img src="img/why_kimaye/fruit_box.png" alt="Fruits Box Image" class="img-responsive">-->
+    </div>
+    <div class="container">
+      <div class="banner_content">
+        <div class="banner_text">
+          <h1 class="heading"><span class="red_bg">The Genesis of Kimaye</span></h1>
+          <p class="banner_subtext">India's Global Fruit Brand</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="trust_section">
+    <div class="container">
+      <div class="div_display_flex">
+        <div class="fruit_box width_40">
+          <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Box.png?v=1602082370"
+            class="img-responsive lazyloaded" alt=""
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Box.png?v=1602082370">
+        </div>
+
+        <div class="fruit_box_text width_60">
+          <div class="heading_section">
+            <h2>Kimaye wants to give you assurance and earn your trust</h2>
+          </div>
+          <p class="para_text_section">by consistently delivering the safest and highest-quality fruits at your
+            doorstep. Our roots lie in the principles of cooperation and partnership.</p>
+
+          <p class="small_para_text_section">Since <span class="red_text">2009</span>, we have focused on building a
+            brand that promises</p>
+
+          <div class="brand_section">
+            <div class="brand_img_text">
+              <div class="safety_img"><img
+                  data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/safety.png?v=1600154657"
+                  class="img-responsive lazyloaded" alt=""
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/safety.png?v=1600154657"></div>
+              <div class="safety_text">Unparalleled<br> safety</div>
+            </div>
+            <div class="brand_img_text">
+              <div class="safety_img"><img
+                  data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/quality.png?v=1600154658"
+                  class="img-responsive lazyloaded" alt=""
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/quality.png?v=1600154658"></div>
+              <div class="safety_text">Benchmark<br> quality</div>
+            </div>
+            <div class="brand_img_text">
+              <div class="safety_img"><img
+                  data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/consistency.png?v=1600154657"
+                  class="img-responsive lazyloaded" alt=""
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/consistency.png?v=1600154657"></div>
+              <div class="safety_text">Highest<br> consistency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="safest_fruits_section">
+    <div class="container">
+      <div class="div_display_flex">
+        <div class="safest_fruits_box width_40">
+          <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Guy.png?v=1600760866"
+            class="img-responsive lazyloaded" alt=""
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Guy.png?v=1600760866">
+        </div>
+
+        <div class="safest_fruits_text width_60">
+          <p class="safest_fruits_para_text">From being the largest exporter of pomegranates and bananas to stepping
+            into the domestic retail market, we've come a long way by adding more colours to your plate.</p>
+
+          <p class="safest_fruits_para_text">We work with the farmers from the time they plant the seed. Our fruits meet
+            international safety standards at every stage of growing, sourcing, packaging, and delivery. We've worked
+            with farmers and innovated farming and delivery techniques for better shelf life and traceability while
+            meeting the most stringent safety norms.</p>
+
+          <p class="safest_fruits_para_text">Our accolades are only a part of our journey. It's our mantra — <span
+              class="red_text">safest fruits, always</span> — that we wear as a badge of honour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="success_story_section">
+    <div class="grass">
+      <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/grass.png?v=1600154657"
+        class="img-responsive lazyloaded" alt=""
+        src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/grass.png?v=1600154657">
+    </div>
+    <div class="container">
+      <div class="heading_section story_heading">
+        <div class="success_heading">
+          <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/green-leaves.png?v=1600154657"
+            class="img-responsive green lazyloaded" alt=""
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/green-leaves.png?v=1600154657">
+          <h2>An Inspiring Success Story</h2>
+        </div>
+      </div>
+      <p class="para_text_section text-center">The husband-wife duo who weaved a fruitful journey.</p>
+
+      <div class="div_display_flex pdng_left_right story_mrgn_top">
+        <div class="width_60 pdng_right">
+          <p class="safest_fruits_para_text">Kimaye began as a collaborative effort by a husband-wife duo who left their
+            cushy careers to start INI Farms. The result? Kimaye became India's first brand to retail fresh fruits in
+            the USA. While one looks after the operations, the other manages sales and marketing. Meet the founders of
+            Kimaye: Purnima and Pankaj Khandelwal.</p>
+          <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/right-arrow.png?v=1600154658"
+            class="img-responsive right-arrow display-none lazyloaded" alt=""
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/right-arrow.png?v=1600154658">
+        </div>
+        <div class="width_40">
+          <div class="story-img">
+            <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/story-01.png?v=1600154659"
+              class="img-responsive lazyloaded" alt=""
+              src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/story-01.png?v=1600154659">
+            <p class="shot_on_location_txt story_1">Shot on Location</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div_display_flex pdng_left_right row_reverse factory_story">
+        <div class="width_60 pdng_left IIT_div">
+          <p class="safest_fruits_para_text story_pdng_btm">An IIT/IIM/McKinsey Alumnus, Pankaj decided to pursue
+            horticulture. He found this to be an ideal combination of art and science with an ability to make a real
+            difference in the life of farmers. Purnima, an economics graduate and MBA comes from a business family. An
+            entrepreneur at core, Purnima found her passion in building an Indian-origin Global Fruit Brand.</p>
+          <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/left-arrow.png?v=1600154658"
+            class="img-responsive left-arrow display-none lazyloaded" alt=""
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/left-arrow.png?v=1600154658">
+        </div>
+        <div class="width_40">
+          <div class="story-img">
+            <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Our-Story_02.png?v=1600870829"
+              class="img-responsive lazyloaded" alt=""
+              src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Our-Story_02.png?v=1600870829">
+            <p class="shot_on_location_txt story_2">Shot on Location</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div_display_flex pdng_left_right story_mrgn_top">
+        <div class="width_50">
+          <p class="safest_fruits_para_text">Way back in 2009, both of them realized that the horticulture sector was
+            highly fragmented and unorganised. The duo was firm about having an integrated value-chain approach with
+            focus on quality over quantity. They chose the 'one fruit at a time' approach over a whole fruit basket and
+            began supplying pomegranates to domestic and international markets. Today, INI has become one of the largest
+            exporter of pomegranates, bananas, and coconuts.</p>
+          <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/right-arrow.png?v=1600154658"
+            class="img-responsive right-arrow display-none lazyloaded" alt=""
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/right-arrow.png?v=1600154658">
+        </div>
+        <div class="width_50">
+          <div class="story-img">
+            <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Wooden-Board.png?v=1600760867"
+              class="img-responsive lazyloaded" alt=""
+              src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Wooden-Board.png?v=1600760867">
+          </div>
+        </div>
+      </div>
+
+      <div class="div_display_flex pdng_left_right row_reverse story_mrgn_top">
+        <div class="width_60 pdng_left">
+          <p class="safest_fruits_para_text story_pdng_btm">Pankaj and Purnima sowed the seeds of quality and efficiency
+            and reaped the fruits in the form of a loyal farmer and customer base. One thing has stayed consistent
+            through the years — their promise of providing safe fruits.</p>
+          <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/left-arrow.png?v=1600154658"
+            class="img-responsive left-arrow display-none lazyloaded" alt=""
+            src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/left-arrow.png?v=1600154658">
+        </div>
+        <div class="width_40">
+          <div class="story-img">
+            <img data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/story-04.png?v=1600154658"
+              class="img-responsive lazyloaded" alt=""
+              src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/story-04.png?v=1600154658">
+            <p class="shot_on_location_txt story_4">Shot on Location</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="founder_section">
+    <div class="founder_section_inside">
+      <div class="heading_section text-center founder_heading">
+        <h2>Noteworthy Words by the Founders</h2>
+      </div>
+
+      <div class="owl-carousel owl-theme founder_carousel owl-loaded owl-drag">
+
+
+
+        <div class="owl-stage-outer">
+          <div class="owl-stage"
+            style="transition: all 2s ease 0s; width: 7137px; transform: translate3d(-2884px, 0px, 0px);">
+            <div class="owl-item cloned" style="width: auto; margin-right: 10px;">
+              <div class="item">
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-01.png?v=1600154657"
+                      class="lazyload img-responsive" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-01.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank" href="http://www.fruitnet.com/asiafruit/article/182696/ini-farms-adds-qr-codes"
+                      class="founder_link">
+                      <h3 class="farm">INI Farms adds QR codes</h3>
+                    </a>
+                    <p class="farm_para">"For INI Farms, the quality and safety of our fruit has always been a priority
+                      and this will help in building the trust that customers seek while buying fruits from the market."
+                    </p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Purnima Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">Asiafruit Magazine, 20th August, 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: auto; margin-right: 10px;">
+              <div class="item">
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-02.png?v=1600154657"
+                      class="lazyload img-responsive" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-02.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank"
+                      href="https://www.thehindubusinessline.com/specials/emerging-entrepreneurs/ini-farms-a-fruitful-venture-for-this-couple/article22417904.ece "
+                      class="founder_link">
+                      <h3 class="farm">InI Farms: A fruitful venture for this couple</h3>
+                    </a>
+                    <p class="farm_para">"30% of the value is added in the supply chain in the case of bananas, whereas
+                      it is 10% in the case of pomegranates."</p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Pankaj Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">The Hindu Business Line, 10th March, 2018</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: auto; margin-right: 10px;">
+              <div class="item">
+
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-03.png?v=1600154657"
+                      class="lazyload img-responsive" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-03.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank"
+                      href="https://yourstory.com/herstory/2020/04/woman-entrepreneur-horticulture-ini-farms-india"
+                      class="founder_link">
+                      <h3 class="farm">This woman entrepreneur is changing the horticulture landscape of India</h3>
+                    </a>
+                    <p class="farm_para">"There were the farmers on one end, dealing with three to five intermediaries
+                      in the supply chain. There was no concept of food safety as to where the produce is coming from
+                      and how it is grown. That is when we realised the potential to add value at each level."</p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Purnima Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">YourStory, 14th April, 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="owl-item" style="width: auto; margin-right: 10px;">
+              <div class="item">
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-01.png?v=1600154657"
+                      class="img-responsive lazyloaded" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-01.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank" href="http://www.fruitnet.com/asiafruit/article/182696/ini-farms-adds-qr-codes"
+                      class="founder_link">
+                      <h3 class="farm">INI Farms adds QR codes</h3>
+                    </a>
+                    <p class="farm_para">"For INI Farms, the quality and safety of our fruit has always been a priority
+                      and this will help in building the trust that customers seek while buying fruits from the market."
+                    </p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Purnima Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">Asiafruit Magazine, 20th August, 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item active center" style="width: auto; margin-right: 10px;">
+              <div class="item">
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-02.png?v=1600154657"
+                      class="img-responsive lazyloaded" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-02.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank"
+                      href="https://www.thehindubusinessline.com/specials/emerging-entrepreneurs/ini-farms-a-fruitful-venture-for-this-couple/article22417904.ece "
+                      class="founder_link">
+                      <h3 class="farm">InI Farms: A fruitful venture for this couple</h3>
+                    </a>
+                    <p class="farm_para">"30% of the value is added in the supply chain in the case of bananas, whereas
+                      it is 10% in the case of pomegranates."</p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Pankaj Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">The Hindu Business Line, 10th March, 2018</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item active" style="width: auto; margin-right: 10px;">
+              <div class="item">
+
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-03.png?v=1600154657"
+                      class="img-responsive lazyloaded" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-03.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank"
+                      href="https://yourstory.com/herstory/2020/04/woman-entrepreneur-horticulture-ini-farms-india"
+                      class="founder_link">
+                      <h3 class="farm">This woman entrepreneur is changing the horticulture landscape of India</h3>
+                    </a>
+                    <p class="farm_para">"There were the farmers on one end, dealing with three to five intermediaries
+                      in the supply chain. There was no concept of food safety as to where the produce is coming from
+                      and how it is grown. That is when we realised the potential to add value at each level."</p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Purnima Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">YourStory, 14th April, 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: auto; margin-right: 10px;">
+              <div class="item">
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-01.png?v=1600154657"
+                      class="img-responsive lazyloaded" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-01.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank" href="http://www.fruitnet.com/asiafruit/article/182696/ini-farms-adds-qr-codes"
+                      class="founder_link">
+                      <h3 class="farm">INI Farms adds QR codes</h3>
+                    </a>
+                    <p class="farm_para">"For INI Farms, the quality and safety of our fruit has always been a priority
+                      and this will help in building the trust that customers seek while buying fruits from the market."
+                    </p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Purnima Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">Asiafruit Magazine, 20th August, 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: auto; margin-right: 10px;">
+              <div class="item">
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-02.png?v=1600154657"
+                      class="lazyload img-responsive" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-02.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank"
+                      href="https://www.thehindubusinessline.com/specials/emerging-entrepreneurs/ini-farms-a-fruitful-venture-for-this-couple/article22417904.ece "
+                      class="founder_link">
+                      <h3 class="farm">InI Farms: A fruitful venture for this couple</h3>
+                    </a>
+                    <p class="farm_para">"30% of the value is added in the supply chain in the case of bananas, whereas
+                      it is 10% in the case of pomegranates."</p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Pankaj Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">The Hindu Business Line, 10th March, 2018</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-item cloned" style="width: auto; margin-right: 10px;">
+              <div class="item">
+
+                <div class="founder_slider">
+                  <div class="img-area"><img
+                      data-src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-03.png?v=1600154657"
+                      class="lazyload img-responsive" alt=""
+                      src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/founder-03.png?v=1600154657"
+                      style="opacity: 1;"></div>
+                  <div class="founder_slider_inside">
+                    <a target="_blank"
+                      href="https://yourstory.com/herstory/2020/04/woman-entrepreneur-horticulture-ini-farms-india"
+                      class="founder_link">
+                      <h3 class="farm">This woman entrepreneur is changing the horticulture landscape of India</h3>
+                    </a>
+                    <p class="farm_para">"There were the farmers on one end, dealing with three to five intermediaries
+                      in the supply chain. There was no concept of food safety as to where the produce is coming from
+                      and how it is grown. That is when we realised the potential to add value at each level."</p>
+                  </div>
+
+                  <div class="name_date_section">
+                    <div class="name_section">
+                      <p>- Purnima Khandelwal</p>
+                    </div>
+                    <div class="date_section">
+                      <p class="date_text">YourStory, 14th April, 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="owl-nav disabled">
+          <div class="owl-prev">prev</div>
+          <div class="owl-next">next</div>
+        </div>
+        <div class="owl-dots disabled">
+          <div class="owl-dot"><span></span></div>
+          <div class="owl-dot active"><span></span></div>
+          <div class="owl-dot"><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+</body>
+
+</html>
