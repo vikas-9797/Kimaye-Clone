@@ -1,7 +1,13 @@
+import  {navbar, footer } from "./componants/navbar.js";
+
+document.getElementById("navbar").innerHTML = navbar();
+
+document.getElementById("footer").innerHTML = footer();
+
 var bonusData = [
-    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7812_360x.jpg?v=1661146423",name:"Fruit Box By Kimaye (Adore)",price:"₹1900",},
-    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7790_360x.jpg?v=1631346990",name:"Fruit Box By Kimaye (Strength)",price:"₹1500",},
-    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7821_360x.jpg?v=1631350656",name:"Fruit Box By Kimaye (Cherish)",price:"₹1400"},
+    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7812_360x.jpg?v=1661146423",name:"Fruit Box By Kimaye (Adore)",price:"1900",},
+    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7790_360x.jpg?v=1631346990",name:"Fruit Box By Kimaye (Strength)",price:"1500",},
+    {image:"https://cdn.shopify.com/s/files/1/0449/5225/6667/products/2I8A7821_360x.jpg?v=1631350656",name:"Fruit Box By Kimaye (Cherish)",price:"1400"},
     
 ]
 
