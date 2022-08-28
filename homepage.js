@@ -1,4 +1,4 @@
-import  {navbar, footer } from "./componants/navbar.js";
+import { navbar, footer } from "./componants/navbar.js";
 
 document.getElementById("navbar").innerHTML = navbar();
 
@@ -17,10 +17,10 @@ document.querySelector("#cart").addEventListener('click', () => {
 })
 
 
-document.querySelector("#profile").addEventListener('click', () => {
-    window.location.href = 'login.html';
-    // console.log('fagh');
-})
+// document.querySelector("#profile").addEventListener('click', () => {
+//     window.location.href = 'login.html';
+//     // console.log('fagh');
+// })
 
 
 document.querySelector('#btn1').addEventListener('click', () => {
