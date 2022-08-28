@@ -17,12 +17,12 @@ let navbar = () => {
         <span>LEARN</span>
     
     <div class="learn-content">
-    <a href="./our_story.html"><p>OUR STORY</p></a>
-    <a href="./our_story.html"></a> <p>TRACEABILITY</p>
-    <a href="./our_story.html"><p>BEYOND FRUITS</p></a> 
+    <a href="./gift.html"><p>OUR STORY</p></a>
+    <a href="./trasebility.html"></a> <p>TRACEABILITY</p>
+    <a href="./why.html"><p>WHY KIMAYE</p></a> 
     </div>
 </div>
-<a href="">GROW</a>
+<a href="./grow.html">GROW</a>
 </Div>
 <div id="logo">
     <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" alt="logo">

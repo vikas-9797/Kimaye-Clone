@@ -21,3 +21,20 @@ document.querySelector("#profile").addEventListener('click', () => {
     window.location.href = 'login.html';
     // console.log('fagh');
 })
+
+
+document.querySelector('#btn1').addEventListener('click', () => {
+    window.location.href = 'all fruits.html';
+})
+
+document.querySelector('#btn2').addEventListener('click', () => {
+    window.location.href = 'all veggies.html';
+})
+
+document.querySelector('#btn3').addEventListener('click', () => {
+    window.location.href = 'fresh cut.html';
+})
+
+document.querySelector('#btn4').addEventListener('click', () => {
+    window.location.href = 'gift.html';
+})
